@@ -6,11 +6,12 @@ export default (props) => {
   useEffect(() => {
     auth.onAuthStateChanged(async (user) => {
       if (user) {
-        const { displayName, email,photoURL } = user;
+        const { displayName, email,photoURL,uid } = user;
         setuser({
           displayName,
           email,
           photoURL,
+          uid,
         });
       }
     });
