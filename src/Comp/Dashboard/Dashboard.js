@@ -1,13 +1,9 @@
 import React, { useEffect, useContext, useState } from "react";
-import { UserContext } from "./providers/UserProvider";
-import { Redirect } from "react-router-dom";
-import { logOut } from "./services/firebase";
-import { AppBar, IconButton, makeStyles,Paper, Toolbar, Typography,Button, Avatar,Menu,MenuItem, Grid, Card } from "@material-ui/core";
-import { AccountCircle } from "@material-ui/icons";
-import MenuIcon from '@material-ui/icons/Menu';
-
-import question from './providers/QuestionData';
-import DayGrid from "./Comp/DayGrid/DayGrid";
+import { UserContext } from "../../providers/UserProvider";
+import { Link, Redirect } from "react-router-dom";
+import firebase , { logOut }  from '../../services/firebase';
+import { AppBar, IconButton, makeStyles, Toolbar, Typography, Avatar,Menu,MenuItem} from "@material-ui/core";
+import DayGrid from "../DayGrid/DayGrid";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -25,11 +21,10 @@ const useStyles = makeStyles((theme) => ({
 export default function Dashboard() {
   const user = useContext(UserContext);
   const [redirect, setredirect] = useState(null);
+  const [allQuestion,setallQuestion]=useState([]);
   const [anchorEl, setAnchorEl] = useState(null)
   const classes = useStyles();
   
-  console.log(question)
-
   const handleLogOut=()=>{
     logOut();
     window.location.href="/";
@@ -42,26 +37,37 @@ export default function Dashboard() {
     setAnchorEl(null);
   };
 
-  
-  useEffect(() => {
-    if (!user) {
-      setredirect("/");
-    }
-  }, [user]);
+  // for route reflecting
+  // useEffect(() => {
+  //   getalldata()
+  //   if (!user) {
+  //     setredirect("/");
+  //   }
+  // }, [user]);
   if (redirect) {
    return <Redirect to={redirect} />;
   }
 
+
+  // for all question from firebase
+  async function getalldata(){
+    const snapshot =await firebase.firestore().collection('Questions').doc('0ccbec70-302b-11eb-a8e4-ab67e7381dea').get()
+    let data=snapshot.data()["question"];
+    var result = Object.keys(data).map((key) => [data[key]]); 
+    setallQuestion(result);
+}
+
+console.log(allQuestion)
+
   return (
     <>
     
-    {user&&<div className={classes.root}>
+    <div className={classes.root}>
      <AppBar 
       position="static"
       color='secondary'
       >
-        <Toolbar>
-          
+        <Toolbar>  
           <Typography variant="h6" className={classes.title}>
             SDE CRACKER
           </Typography>
@@ -71,7 +77,7 @@ export default function Dashboard() {
           aria-controls="simple-menu"
            aria-haspopup="true"
           >
-            <Avatar src={user.photoURL} />
+          <Avatar src={user?.photoURL} />
           </IconButton>
           <Menu
         id="simple-menu"
@@ -82,15 +88,16 @@ export default function Dashboard() {
       >
         <MenuItem >Profile</MenuItem>
         <MenuItem >My account</MenuItem>
+        <Link>
+        </Link>
         <MenuItem onClick={handleLogOut}>Logout</MenuItem>
       </Menu>
-          
         </Toolbar>
       </AppBar>
       <div>
-        <DayGrid data={question}/>
+        <DayGrid/>
       </div>
-    </div>}
+    </div>
     </>
   );
 }

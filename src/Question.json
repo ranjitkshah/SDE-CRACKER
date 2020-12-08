@@ -1,0 +1,368 @@
+{
+    "Questions": {
+      "Day1": [
+        {
+          "id": 1,
+          "name": "Find the duplicate in an array of N+1 integers.",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id": 2,
+          "name": "Sort an array of 0’s 1’s 2’s without using extra space or sorting algo",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id": 3,
+          "name": "Repeat and Missing Number",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id": 4,  
+          "name": "Merge two sorted Arrays without extra space ",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id": 5,
+          "name": "Kadane’s Algorithm",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id": 6,
+          "name": "Merge Overlapping Subintervals",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        }
+      ],
+      "Day2": [
+        {
+          "id": 7,
+          "name": "Set Matrix Zeros",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+         "id":8,
+         "name":"Pascal Triangle",
+         "questionurl": "",
+         "yturl": "",
+         "isdone": false
+        },
+        {
+          "id":9,
+          "name":"Next Permutation",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":10,
+          "name":"Inversion of Array",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":11,
+          "name":"Stock Buy and Sell",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":12,
+          "name":"Rotate Matrix",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        }
+      ],
+      "Day3": [
+        {
+          "id":13,
+          "name":"Search in a 2D matrix",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":14,
+          "name":"Search in a 2D matrix",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":15,
+          "name":"Majority Element (>N/2 times)",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+          
+        },
+        {
+          "id":16,
+          "name":"Majority Element (>N/3 times)",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":17,
+          "name":"Grid Unique Paths",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":18,
+          "name":"Reverse Pairs (Leetcode)",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        }
+      ],
+      "Day4": [
+        {
+          "id":19,
+          "name":"2 Sum problem",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":20,
+          "name":"4 Sum problem",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":21,
+          "name":"Longest Consecutive Sequence",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+          
+        },
+        {
+          "id":22,
+          "name":"Largest Subarray with 0 sum",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":23,
+          "name":"Count number of subarrays with given XOR",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        },
+        {
+          "id":22,
+          "name":"Longest substring without repeat",
+          "questionurl": "",
+          "yturl": "",
+          "isdone": false
+        }
+      ],
+      "Day5": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day6": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day7": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day8": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day9": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day10": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day11": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day12": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day13": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day14": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day15": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day16": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day17": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day18": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day19": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day20": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day21": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day22": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day23": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day24": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day25": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day26": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day27": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day28": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day29": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "Day30": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    }
+  }
+  
+  
+  
+  

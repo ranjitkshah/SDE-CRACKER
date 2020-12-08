@@ -4,8 +4,8 @@ import firebase from '../../services/firebase';
 const done=[];
 export default function QuestionDone() {
     const user = useContext(UserContext);
-    const [question,setQuestion]=useState([]);
     const [checked,setChecked]=useState(false);
+    const [question,setQuestion]=useState([]);
 
     useEffect(() => {
         getalldata();

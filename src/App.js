@@ -1,31 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css"
-import Login from "./Login";
-import Dashboard from "./Dashboard";
+import Login from './Comp/Login/Login'
+import Dashboard from "./Comp/Dashboard/Dashboard";
 import UserProvider from "./providers/UserProvider";
-import Navbar from "./Comp/Navbar/Navbar";
-import QuestionDone from "./Comp/QuestionDone/QuestionDone";
 function App() {
   return (
+    <div className="App">
     <UserProvider>
     <Router>
-    <div className="App">
-        <Switch>
-          <Route exact path="/">
-            <Navbar />
-            <Login />
-          </Route>
-          <Route exact path="/dashboard">
-            <Dashboard />
-          </Route>
-          <Route exact path="/questiondone">
-            <QuestionDone />
-          </Route>
-        </Switch>
-    </div>
+          <Route exact path="/" component={Login} />
+          <Route exact path="/dashboard" component={Dashboard}/>
     </Router>
     </UserProvider>
+    </div>
   );
 }
 
