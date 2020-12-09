@@ -23,11 +23,20 @@ const useStyles = makeStyles((theme) => ({
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main
   },
+  Timeline:{
+      cursor: 'pointer'
+  },
+    //   QuestionTable: {
+    //     display: 'flex',
+    //     flexDirection: 'column',
+    //     justifyContent: 'center'
+    //   }
 }));
 
 export default function Daygrid() {
     const [question,setQuestion]=useState([]);
     const [showQuestion, setshowQuestion] = useState(false)
+    const [list, setlist] = useState([])
     
         useEffect(() => {
             getalldata();
@@ -43,20 +52,20 @@ export default function Daygrid() {
     console.log(question)
 
     //questionlist
-    // const questionlist=(data)=>{
-    //     setshowQuestion(true)
-    //     // return <QuestionTable data={data}/>
-    // }
+    const questionset=(data)=>{
+        setshowQuestion(true)
+        setlist(data)
+        console.log(data)
+    }
 
-
+    console.log(showQuestion)
   const classes = useStyles();
 
   return (
-    <div>
-         <Timeline align="alternate">
+    <div>{!showQuestion? <Timeline align="alternate" className={classes.Timeline}>
         { 
             question?.map((data,index)=>{
-                return <TimelineItem key={index}>
+                return <TimelineItem key={index} onClick={()=>questionset(data[0])} >
                   <TimelineSeparator>
                     <TimelineDot>
                       <FastfoodIcon />
@@ -75,7 +84,13 @@ export default function Daygrid() {
               
             })
         }
-    </Timeline>
+    </Timeline> : <div className={classes.QuestionTable}>
+        <button onClick={()=>setshowQuestion(false)}>click</button>
+        <QuestionTable data={list} />
     </div>
+ }   
+    <div>
+    </div>
+ </div>
   );
 }
