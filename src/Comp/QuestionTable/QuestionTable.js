@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -13,6 +13,7 @@ import { Help, YouTube } from '@material-ui/icons';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import Collapse from '@material-ui/core/Collapse';
+import firebase from '../../services/firebase';
 
 let done=[];
 
@@ -32,15 +33,32 @@ export default function QuestionTable({data}) {
   const classes = useStyles();
   const [checked, setChecked] = React.useState([0]);
   const [open, setOpen] = React.useState(false);
+  
   const user = React.useContext(UserContext);
   console.log(user)
-//   console.log(data.shift())
-  console.log(data.slice(1))
 
+  useEffect(() => {
+   
+      getalldata();
+    
+}, [])
+
+  //to get list by user
+  
+  async function getalldata(){
+    const snapshot =await firebase.firestore().collection('questiondone').doc(`${user?.uid}`).get()
+     done=snapshot.data()["questionid"];
+    console.log(done);      
+}
+
+
+  //to open list
   const handleClick = () => {
     setOpen(!open);
   };
 
+
+  //for handling toggle event
   const handleToggle=(id)=>{
     console.log(id)
     if(done.includes(id)){
@@ -51,8 +69,29 @@ export default function QuestionTable({data}) {
     else{
       done.push(id)
     }
+    setOpen(!open);
     console.log(done)
+    addtoDB(done)
   }
+
+
+  // add data to db
+  const addtoDB=(done)=>{
+    const db=firebase.firestore();
+    console.log(done);
+    const donequestion=db.collection('questiondone')
+    .doc(user.uid).set({
+        questionid:done},
+        {merge:true})
+    .then(function(){
+        console.log("written ")
+    })
+    .catch(function(error) {
+        console.error("Error writing document: ", error);
+    });
+}
+
+
   return (
       <div>
           <h1> {data[0]} </h1>

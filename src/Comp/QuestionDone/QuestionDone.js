@@ -51,7 +51,6 @@ export default function QuestionDone() {
             console.log(e.target.value);
             done.push(e.target.value);
             addtoDB(done);
-           
         }
     }
 
