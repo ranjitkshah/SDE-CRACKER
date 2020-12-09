@@ -39,26 +39,15 @@ export default function Dashboard() {
 
   // for route reflecting
   // useEffect(() => {
-  //   getalldata()
   //   if (!user) {
   //     setredirect("/");
   //   }
   // }, [user]);
+
+
   if (redirect) {
    return <Redirect to={redirect} />;
   }
-
-
-  // for all question from firebase
-  async function getalldata(){
-    const snapshot =await firebase.firestore().collection('Questions').doc('0ccbec70-302b-11eb-a8e4-ab67e7381dea').get()
-    let data=snapshot.data()["question"];
-    var result = Object.keys(data).map((key) => [data[key]]); 
-    setallQuestion(result);
-}
-
-console.log(allQuestion)
-
   return (
     <>
     

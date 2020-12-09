@@ -44,8 +44,10 @@ export default function Daygrid() {
     
         async function getalldata(){
             const snapshot =await firebase.firestore().collection('Questions').doc('cb740fb0-3975-11eb-a35b-dfad7671627c').get()
-            let data=snapshot.data()["question"];
+            let data=snapshot.data()["question"]
+            console.log(data)
             var result = Object.keys(data).map((key) => [data[key]]); 
+            result.sort()
             // result.reverse();
             setQuestion(result);      
         }
