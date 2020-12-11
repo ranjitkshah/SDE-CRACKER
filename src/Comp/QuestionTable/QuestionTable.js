@@ -14,7 +14,7 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import Collapse from '@material-ui/core/Collapse';
 import firebase from '../../services/firebase';
-import { Avatar, Divider, ListItemAvatar } from '@material-ui/core';
+import { Avatar, Divider, ListItemAvatar, Tooltip } from '@material-ui/core';
 
 let done=[];
 
@@ -114,12 +114,16 @@ export default function QuestionTable({data}) {
             <ListItemText primary={done.includes(data?.id)?'Done':'Not Done'} />
 
             <ListItemSecondaryAction>
+              <Tooltip title="question link" >
               <IconButton edge="end" target="_blank" href="https://stackoverflow.com/questions/51940157/how-to-align-horizontal-icon-and-text-in-material-ui" aria-label="comments">
               <img className={classes.logo} src="https://img.icons8.com/color/48/000000/ask-question.png"/>
               </IconButton>
+              </Tooltip>
+              <Tooltip title="youtube help video" >
               <IconButton edge="end" aria-label="youtube">
               <img className={classes.logo} src="https://img.icons8.com/fluent/48/000000/youtube-play.png"/>
               </IconButton>
+              </Tooltip>
             </ListItemSecondaryAction>
           </ListItem>
         </List>

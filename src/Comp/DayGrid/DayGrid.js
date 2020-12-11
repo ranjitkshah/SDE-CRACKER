@@ -15,7 +15,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import firebase from '../../services/firebase';
 import QuestionTable from '../QuestionTable/QuestionTable';
-import { Fab } from '@material-ui/core';
+import { CircularProgress, Fab } from '@material-ui/core';
 import { ArrowBackIos } from '@material-ui/icons';
 
 
@@ -50,7 +50,8 @@ export default function Daygrid() {
   const classes = useStyles();
 
   return (
-    <div>{!showQuestion? <Timeline align="alternate" className={classes.Timeline}>
+    <div> 
+    { question.length? <div>{!showQuestion? <Timeline align="alternate" className={classes.Timeline}>
         { 
             question?.map((data,index)=>{
                 return <TimelineItem key={index} onClick={()=>questionset(data[0])} >
@@ -82,6 +83,9 @@ export default function Daygrid() {
  }   
     <div>
     </div>
+ </div> : <div className={classes.loader} > 
+ <CircularProgress   />
+ </div>}
  </div>
   );
 }
@@ -106,4 +110,9 @@ const useStyles = makeStyles((theme) => ({
   extendedIcon: {
         marginRight: theme.spacing(1),
       },
+  loader: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: 285
+  }
 }));
