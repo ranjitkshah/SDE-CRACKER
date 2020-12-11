@@ -14,20 +14,11 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import Collapse from '@material-ui/core/Collapse';
 import firebase from '../../services/firebase';
+import { Avatar, Divider, ListItemAvatar } from '@material-ui/core';
 
 let done=[];
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-    maxWidth: 460,
-    backgroundColor: theme.palette.background.paper,
-  },
-  nested: {
-    paddingLeft: theme.spacing(4),
-  },
- 
-}));
+
 
 export default function QuestionTable({data}) {
   const classes = useStyles();
@@ -93,16 +84,19 @@ export default function QuestionTable({data}) {
 
 
   return (
-      <div>
-          <h1> {data[0]} </h1>
+      <div className={classes.listDiv} >
+          <h1 className={classes.title} > {data[0].toUpperCase()} </h1>
     <List className={classes.root}>
       {data.slice(1).map((data,index) => {
         const labelId = `checkbox-list-label-${index}`;
 
         return ( <>
-          <ListItem button onClick={handleClick}>
+          <ListItem className={classes.listItem}  disableGutters={true} button onClick={handleClick}>
+            <Avatar className={classes.index}>
+              {index+1}
+            </Avatar>
         <ListItemText primary={data?.name} />
-        {open ? <ExpandLess /> : <ExpandMore />}
+        {open ? <ExpandLess className={classes.open} /> : <ExpandMore className={classes.open} />}
       </ListItem>
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div"  disablePadding>
@@ -117,19 +111,20 @@ export default function QuestionTable({data}) {
                 inputProps={{ 'aria-labelledby': labelId }}
               />
             </ListItemIcon>
-            <ListItemText primary={done.includes(data?.id)?'true':'false'} />
+            <ListItemText primary={done.includes(data?.id)?'Done':'Not Done'} />
 
             <ListItemSecondaryAction>
-              <IconButton edge="end" aria-label="comments">
-                <CommentIcon />
+              <IconButton edge="end" target="_blank" href="https://stackoverflow.com/questions/51940157/how-to-align-horizontal-icon-and-text-in-material-ui" aria-label="comments">
+              <img className={classes.logo} src="https://img.icons8.com/color/48/000000/ask-question.png"/>
               </IconButton>
-              <IconButton edge="end" aria-label="comments">
-                <YouTube/>
+              <IconButton edge="end" aria-label="youtube">
+              <img className={classes.logo} src="https://img.icons8.com/fluent/48/000000/youtube-play.png"/>
               </IconButton>
             </ListItemSecondaryAction>
           </ListItem>
         </List>
       </Collapse>
+      <Divider/>
          </>
         );
       })}
@@ -137,3 +132,36 @@ export default function QuestionTable({data}) {
     </div>
   );
 }
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: '100%',
+    maxWidth: 460,
+    backgroundColor: theme.palette.background.paper,
+  },
+  nested: {
+    paddingLeft: theme.spacing(4),
+  },
+  index: {
+    margin: 10,
+  },
+ title: {
+   backgroundColor: 'aqua',
+   padding: 10,
+   borderRadius: '0px 20px 20px 20px',
+   fontSize: '1.5rem',
+ },
+ logo: {
+   maxWidth: 30,
+   margin: '0px 10px'
+ },
+ open: {
+   margin: 10
+ },
+ listItem:{
+   backgroundColor: 'aqua',
+   borderRadius: '0px 30px',
+   margin: 10
+ }
+ 
+}));

@@ -15,23 +15,9 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import firebase from '../../services/firebase';
 import QuestionTable from '../QuestionTable/QuestionTable';
+import { Fab } from '@material-ui/core';
+import { ArrowBackIos } from '@material-ui/icons';
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    padding: '6px 16px',
-  },
-  secondaryTail: {
-    backgroundColor: theme.palette.secondary.main
-  },
-  Timeline:{
-      cursor: 'pointer'
-  },
-    //   QuestionTable: {
-    //     display: 'flex',
-    //     flexDirection: 'column',
-    //     justifyContent: 'center'
-    //   }
-}));
 
 export default function Daygrid() {
     const [question,setQuestion]=useState([]);
@@ -87,7 +73,10 @@ export default function Daygrid() {
             })
         }
     </Timeline> : <div className={classes.QuestionTable}>
-        <button onClick={()=>setshowQuestion(false)}>click</button>
+      <Fab color="secondary" variant="extended" onClick={()=>setshowQuestion(false)}>
+        <ArrowBackIos  className={classes.extendedIcon} />
+          Back
+      </Fab>
         <QuestionTable data={list} />
     </div>
  }   
@@ -96,3 +85,25 @@ export default function Daygrid() {
  </div>
   );
 }
+
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    padding: '6px 16px',
+    borderRadius: '0px 30px 0px 30px'
+  },
+  secondaryTail: {
+    backgroundColor: theme.palette.secondary.main
+  },
+  Timeline:{
+      cursor: 'pointer'
+  },
+  QuestionTable: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        marginTop: 20
+      },
+  extendedIcon: {
+        marginRight: theme.spacing(1),
+      },
+}));
