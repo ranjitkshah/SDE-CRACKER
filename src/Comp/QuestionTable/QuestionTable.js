@@ -15,6 +15,8 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 import Collapse from '@material-ui/core/Collapse';
 import firebase from '../../services/firebase';
 import { Avatar, Divider, ListItemAvatar, Tooltip } from '@material-ui/core';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 let done=[];
 
@@ -54,11 +56,29 @@ export default function QuestionTable({data}) {
     console.log(id)
     if(done.includes(id)){
       done=done.filter(function(item){
-        return item!==id
-      })
+        return item!==id })
+        toast.error('I think you got some errors 🤔', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
     }
     else{
       done.push(id)
+      toast.success(`🚀 wow! you completed ${id}th question`, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
+      
     }
     setOpen(!open);
     console.log(done)
@@ -85,6 +105,7 @@ export default function QuestionTable({data}) {
 
   return (
       <div className={classes.listDiv} >
+        <ToastContainer />
           <h1 className={classes.title} > {data[0].toUpperCase()} </h1>
     <List className={classes.root}>
       {data.slice(1).map((data,index) => {
@@ -165,7 +186,7 @@ const useStyles = makeStyles((theme) => ({
  listItem:{
    backgroundColor: 'aqua',
    borderRadius: '0px 30px',
-   margin: 10
+   margin: '10px 0px',
  }
  
 }));
