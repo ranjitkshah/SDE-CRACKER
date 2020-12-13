@@ -2,18 +2,32 @@ import { Fab, makeStyles, TextField } from "@material-ui/core";
 import { UserContext } from "../../providers/UserProvider";
 import { CheckCircle } from "@material-ui/icons";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import React, { useContext } from "react";
 import Navbar from "../Navbar/Navbar";
 
 export default function Connect() {
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+    toast.success(`🤝 we will get back to u soon!`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
   const { register, handleSubmit, watch, errors } = useForm();
   const classes = useStyles();
   const user = useContext(UserContext);
   return (
     <div>
       <Navbar />
+      <ToastContainer />
       <div className={classes.title}>
         <h3>CONNECT WITH US</h3>
       </div>
@@ -26,12 +40,10 @@ export default function Connect() {
             variant="outlined"
             className={classes.TextField}
             name="email"
-            value={user?.email}
+            type="email"
+            defaultValue={user?.email}
             inputRef={register}
             required
-            InputProps={{
-              readOnly: true,
-            }}
           />
           <span className={classes.subtitle}>subject</span>
 
