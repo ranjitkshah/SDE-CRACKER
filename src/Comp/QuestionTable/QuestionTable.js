@@ -112,13 +112,12 @@ export default function QuestionTable({ data }) {
           const labelId = `checkbox-list-label-${index}`;
 
           return (
-            <div key={data.id} >
+            <div key={data.id}>
               <ListItem
                 className={classes.listItem}
                 disableGutters={true}
                 button
                 onClick={handleClick}
-                
               >
                 <Avatar className={classes.index}>{data.id}</Avatar>
                 <ListItemText primary={data?.name} />

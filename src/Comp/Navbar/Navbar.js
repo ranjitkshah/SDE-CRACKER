@@ -61,6 +61,9 @@ export default function Navbar() {
             <Link to="/connect" style={{ textDecoration: "none" }}>
               <MenuItem>Connect</MenuItem>
             </Link>
+            <Link to="/about" style={{ textDecoration: "none" }}>
+              <MenuItem>About us</MenuItem>
+            </Link>
             <MenuItem onClick={handleLogOut}>Logout</MenuItem>
           </Menu>
         </Toolbar>
