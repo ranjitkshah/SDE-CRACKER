@@ -13,11 +13,13 @@ import firebase from "../../services/firebase";
 import QuestionTable from "../QuestionTable/QuestionTable";
 import { CircularProgress, Fab } from "@material-ui/core";
 import { ArrowBackIos } from "@material-ui/icons";
+var quotes = require("../../quotes.json");
 
 export default function Daygrid() {
   const [question, setQuestion] = useState([]);
   const [showQuestion, setshowQuestion] = useState(false);
   const [list, setlist] = useState([]);
+  const text = quotes[Math.floor(Math.random() * (190 - 2 + 1)) + 2]?.text;
 
   useEffect(() => {
     getalldata();
@@ -52,7 +54,11 @@ export default function Daygrid() {
     <div>
       {question.length ? (
         <div>
-          {!showQuestion ? (
+          {!showQuestion ? (<>
+            <div className={classes.title}>
+            <span>SDE_CHALLENGE(DAYS 30);</span>
+            <span className={classes.quotes}> "{text}" </span>
+          </div>
             <Timeline align="alternate" className={classes.Timeline}>
               {question?.map((data, index) => {
                 return (
@@ -78,6 +84,7 @@ export default function Daygrid() {
                 );
               })}
             </Timeline>
+            </>
           ) : (
             <div className={classes.QuestionTable}>
               <Fab
@@ -129,5 +136,17 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     marginTop: 285,
+  },
+  title: {
+    margin: 20,
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
+    fontSize: "1.5rem",
+  },
+  quotes: {
+    fontSize: 10,
+    margin: 5,
+    color: "grey",
   },
 }));
