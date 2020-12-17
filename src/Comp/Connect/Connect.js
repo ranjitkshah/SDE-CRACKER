@@ -11,6 +11,13 @@ import Navbar from "../Navbar/Navbar";
 export default function Connect() {
   const onSubmit = (data) => {
     console.log(data);
+    window.emailjs.send('service_edqf2pb','template_amui1xg',
+      data
+      ).then(res => {
+        console.log('Email successfully sent!')
+      })
+      // Handle errors here however you like, or use a React error boundary
+      .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
     toast.success(`🤝 we will get back to u soon!`, {
       position: "top-right",
       autoClose: 5000,
