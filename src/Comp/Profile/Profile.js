@@ -18,15 +18,24 @@ export default function Profile() {
   useEffect(() => {
     getalldata();
   }, []);
-
+  console.log(user?.uid);
   async function getalldata() {
     const snapshot = await firebase
       .firestore()
       .collection("questiondone")
-      .doc(`${user?.uid}`)
       .get();
-    let done = snapshot.data() ? snapshot.data()["questionid"] : [];
-    console.log(done);
+
+    // console.log(snapshot.data())
+
+    // console.log(snapshot.data()["questionid"])
+    console.log(
+      snapshot.docs.map((doc) => {
+        doc.data();
+      })
+    );
+    let idlist = snapshot.docs.map((doc) => doc.id);
+
+    // console.log( snapshot.docs.map(doc => doc.id))
   }
 
   return (
