@@ -7,6 +7,7 @@ import UserProvider from "./providers/UserProvider";
 import Profile from "./Comp/Profile/Profile";
 import Connect from "./Comp/Connect/Connect";
 import About from "./Comp/About/About";
+import Discussion from "./Comp/Discussion/Discussion";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/connect" component={Connect} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/discussion" component={Discussion} />
         </Router>
       </UserProvider>
     </div>

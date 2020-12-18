@@ -58,6 +58,9 @@ export default function Navbar() {
             <Link to="/dashboard" style={{ textDecoration: "none" }}>
               <MenuItem>Dashboard</MenuItem>
             </Link>
+            <Link to="/discussion" style={{ textDecoration: "none" }}>
+              <MenuItem>Discussion Forum</MenuItem>
+            </Link>
             <Link to="/connect" style={{ textDecoration: "none" }}>
               <MenuItem>Connect</MenuItem>
             </Link>

@@ -54,36 +54,37 @@ export default function Daygrid() {
     <div>
       {question.length ? (
         <div>
-          {!showQuestion ? (<>
-            <div className={classes.title}>
-            <span>SDE_CHALLENGE(DAYS 30);</span>
-            <span className={classes.quotes}> "{text}" </span>
-          </div>
-            <Timeline align="alternate" className={classes.Timeline}>
-              {question?.map((data, index) => {
-                return (
-                  <TimelineItem
-                    key={index}
-                    onClick={() => questionset(data[0])}
-                  >
-                    <TimelineSeparator>
-                      <TimelineDot>
-                        <FastfoodIcon />
-                      </TimelineDot>
-                      <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent>
-                      <Paper elevation={3} className={classes.paper}>
-                        <Typography variant="h6" component="h1">
-                          Day {index + 1}
-                        </Typography>
-                        <Typography>{data[0][0]}</Typography>
-                      </Paper>
-                    </TimelineContent>
-                  </TimelineItem>
-                );
-              })}
-            </Timeline>
+          {!showQuestion ? (
+            <>
+              <div className={classes.title}>
+                <span>SDE_CHALLENGE(DAYS 30);</span>
+                <span className={classes.quotes}> "{text}" </span>
+              </div>
+              <Timeline align="alternate" className={classes.Timeline}>
+                {question?.map((data, index) => {
+                  return (
+                    <TimelineItem
+                      key={index}
+                      onClick={() => questionset(data[0])}
+                    >
+                      <TimelineSeparator>
+                        <TimelineDot>
+                          <FastfoodIcon />
+                        </TimelineDot>
+                        <TimelineConnector />
+                      </TimelineSeparator>
+                      <TimelineContent>
+                        <Paper elevation={3} className={classes.paper}>
+                          <Typography variant="h6" component="h1">
+                            Day {index + 1}
+                          </Typography>
+                          <Typography>{data[0][0]}</Typography>
+                        </Paper>
+                      </TimelineContent>
+                    </TimelineItem>
+                  );
+                })}
+              </Timeline>
             </>
           ) : (
             <div className={classes.QuestionTable}>
@@ -142,7 +143,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
-    fontSize: "1.5rem",
+    fontSize: "32px",
+    ["@media (max-width:390px)"]: {
+      fontSize: "22px",
+    },
   },
   quotes: {
     fontSize: 10,

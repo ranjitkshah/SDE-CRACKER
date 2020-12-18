@@ -4,7 +4,7 @@ import { CheckCircle } from "@material-ui/icons";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Axios from 'axios';
+import Axios from "axios";
 
 import React, { useContext } from "react";
 import Navbar from "../Navbar/Navbar";
@@ -12,9 +12,9 @@ import Navbar from "../Navbar/Navbar";
 export default function Connect() {
   const onSubmit = (data) => {
     console.log(data);
-    Axios.post('http://localhost:2000/api/email',data) 
-      .then(res=>{
-        console.log('Email successfull sent!')
+    Axios.post("http://localhost:2000/api/email", data)
+      .then((res) => {
+        console.log("Email successfull sent!");
         toast.success(`🤝 we will get back to u soon!`, {
           position: "top-right",
           autoClose: 5000,
@@ -25,10 +25,9 @@ export default function Connect() {
           progress: undefined,
         });
       })
-      .catch(err=>{
-        console.error('email not sent')
-      })
-    
+      .catch((err) => {
+        console.error("email not sent");
+      });
   };
   const { register, handleSubmit, watch, errors } = useForm();
   const classes = useStyles();
