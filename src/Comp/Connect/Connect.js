@@ -4,6 +4,7 @@ import { CheckCircle } from "@material-ui/icons";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Axios from 'axios';
 
 import React, { useContext } from "react";
 import Navbar from "../Navbar/Navbar";
@@ -11,22 +12,23 @@ import Navbar from "../Navbar/Navbar";
 export default function Connect() {
   const onSubmit = (data) => {
     console.log(data);
-    window.emailjs.send('service_edqf2pb','template_amui1xg',
-      data
-      ).then(res => {
-        console.log('Email successfully sent!')
+    Axios.post('http://localhost:2000/api/email',data) 
+      .then(res=>{
+        console.log('Email successfull sent!')
+        toast.success(`🤝 we will get back to u soon!`, {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       })
-      // Handle errors here however you like, or use a React error boundary
-      .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
-    toast.success(`🤝 we will get back to u soon!`, {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+      .catch(err=>{
+        console.error('email not sent')
+      })
+    
   };
   const { register, handleSubmit, watch, errors } = useForm();
   const classes = useStyles();
