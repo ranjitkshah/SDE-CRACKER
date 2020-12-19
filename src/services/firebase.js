@@ -2,6 +2,7 @@ import * as firebase from "firebase/app";
 
 import "firebase/auth";
 import "firebase/firestore";
+
 import dotenv from 'dotenv'
 import { Redirect } from "react-router-dom";
 dotenv.config()

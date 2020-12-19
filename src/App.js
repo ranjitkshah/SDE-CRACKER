@@ -8,7 +8,12 @@ import Profile from "./Comp/Profile/Profile";
 import Connect from "./Comp/Connect/Connect";
 import About from "./Comp/About/About";
 import Discussion from "./Comp/Discussion/Discussion";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import firebase from 'firebase/app';
 function App() {
+  const auth = firebase.auth();
+  const [user] = useAuthState(auth);
+  console.log(user?.uid)
   return (
     <div className="App">
       <UserProvider>
