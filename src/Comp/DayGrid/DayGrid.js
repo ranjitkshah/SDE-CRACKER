@@ -11,7 +11,7 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import firebase from "../../services/firebase";
 import QuestionTable from "../QuestionTable/QuestionTable";
-import { CircularProgress, Fab } from "@material-ui/core";
+import { Avatar, CircularProgress, Fab } from "@material-ui/core";
 import { ArrowBackIos } from "@material-ui/icons";
 var quotes = require("../../quotes.json");
 
@@ -69,7 +69,7 @@ export default function Daygrid() {
                     >
                       <TimelineSeparator>
                         <TimelineDot>
-                          <FastfoodIcon />
+                         <Avatar className={classes.lettericon} >{index+1}</Avatar>
                         </TimelineDot>
                         <TimelineConnector />
                       </TimelineSeparator>
@@ -153,4 +153,9 @@ const useStyles = makeStyles((theme) => ({
     margin: 5,
     color: "grey",
   },
+  lettericon: {
+    backgroundColor: 'white',
+    color: '#f50057',
+    fontWeight: 'bold',
+  }
 }));
