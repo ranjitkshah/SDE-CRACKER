@@ -25,17 +25,9 @@ export default function Profile() {
       .collection("questiondone")
       .get();
 
-    // console.log(snapshot.data())
-
-    // console.log(snapshot.data()["questionid"])
-    console.log(
-      snapshot.docs.map((doc) => {
-        doc.data();
-      })
-    );
     let idlist = snapshot.docs.map((doc) => doc.id);
 
-    // console.log( snapshot.docs.map(doc => doc.id))
+    console.log( snapshot.docs.map(doc => doc.data()))
   }
 
   return (

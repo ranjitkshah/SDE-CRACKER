@@ -19,13 +19,14 @@ export default function Discussion() {
   const query = messagesRef.orderBy("createdAt").limit(25);
 
   const [messages] = useCollectionData(query, { idField: "id" });
+  console.log(messages)
 
   const [formValue, setFormValue] = useState("");
 
   const sendMessage = async (e) => {
     e.preventDefault();
 
-    const { uid, photoURL, displayName } = user;
+    const { uid, photoURL, displayName, email } = user;
 
     await messagesRef.add({
       text: formValue,
@@ -33,7 +34,9 @@ export default function Discussion() {
       displayName,
       uid,
       photoURL,
+      email
     });
+
 
     setFormValue("");
     dummy.current.scrollIntoView({ behavior: "smooth" });
@@ -84,7 +87,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     backgroundColor: "aqua",
-    padding: 20,
   },
   message: {
     padding: 10,

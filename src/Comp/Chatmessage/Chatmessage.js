@@ -5,16 +5,17 @@ import clsx from "clsx";
 
 export default function Chatmessage(props) {
   const user = useContext(UserContext);
-  const { text, uid, photoURL, displayName, createdAt } = props.message;
-  console.log(props.message);
-  console.log(createdAt?.toDate());
+  const { text, uid, photoURL, displayName, createdAt, email } = props.message;
+  const info = `${displayName}\n${email}`
   const messageClass = uid === user.uid ? "sent" : "received";
+
   const chatClass = uid === user.uid ? "me" : "other";
   const classes = useStyles();
+  
   return (
     <div>
       <div className={clsx(classes.chatlist, classes[messageClass])}>
-        <Tooltip title={displayName}>
+        <Tooltip arrow title={info}>
           <img
             className={classes.img}
             src={
