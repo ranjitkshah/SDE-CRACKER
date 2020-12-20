@@ -15,7 +15,7 @@ export default function Chatmessage(props) {
   return (
     <div>
       <div className={clsx(classes.chatlist, classes[messageClass])}>
-        <Tooltip arrow title={info}>
+        <Tooltip enterTouchDelay={100} arrow title={info}>
           <img
             className={classes.img}
             src={
