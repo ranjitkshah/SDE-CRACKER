@@ -3,9 +3,9 @@ import React, { useState, useRef, useContext } from "react";
 import Navbar from "../Navbar/Navbar";
 import { UserContext } from "../../providers/UserProvider";
 // import firebase from "../../services/firebase";
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/analytics';
+import firebase from "firebase/app";
+import "firebase/firestore";
+import "firebase/analytics";
 
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import Chatmessage from "../Chatmessage/Chatmessage";
@@ -19,7 +19,7 @@ export default function Discussion() {
   const query = messagesRef.orderBy("createdAt").limit(25);
 
   const [messages] = useCollectionData(query, { idField: "id" });
-  
+
   const [formValue, setFormValue] = useState("");
 
   const sendMessage = async (e) => {
@@ -28,7 +28,6 @@ export default function Discussion() {
     const { uid, photoURL, displayName } = user;
 
     await messagesRef.add({
-      
       text: formValue,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       displayName,
@@ -44,21 +43,27 @@ export default function Discussion() {
     <div>
       <Navbar />
       <h3 className={classes.title}>DiSCUSSION FORUM</h3>
-      <div>
-        <div>
+      <div className={classes.section}>
+        <div className={classes.message}>
           {messages &&
             messages.map((msg) => <Chatmessage key={msg.id} message={msg} />)}
 
           <span ref={dummy}></span>
         </div>
 
-        <form onSubmit={sendMessage}>
+        <form className={classes.form} onSubmit={sendMessage}>
           <input
             value={formValue}
+            className={classes.input}
             onChange={(e) => setFormValue(e.target.value)}
             placeholder="say something nice"
           />
-          <button type="submit" disabled={!formValue}>
+          &nbsp;
+          <button
+            className={classes.button}
+            type="submit"
+            disabled={!formValue}
+          >
             🕊️
           </button>
         </form>
@@ -73,5 +78,30 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     fontSize: "1.5rem",
+  },
+  section: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    backgroundColor: "aqua",
+    padding: 20,
+  },
+  message: {
+    padding: 10,
+    height: "67vh",
+    display: "flex",
+    flexDirection: "column",
+    overflowY: "scroll",
+  },
+  form: {
+    width: "100%",
+    display: "flex",
+  },
+  input: {
+    width: "100%",
+    height: 23,
+  },
+  button: {
+    width: 97,
   },
 }));
