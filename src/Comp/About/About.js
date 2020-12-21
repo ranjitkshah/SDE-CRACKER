@@ -11,7 +11,7 @@ export default function About() {
         <h3>SDE CRACKER</h3>
       </div>
       
-        <Box boxShadow={3}>
+        <Box boxShadow={3} className={classes.container}>
           <div className={classes.center}>
               <p>
                   This project is developed for who want to prepare for sde post.
@@ -30,13 +30,16 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         fontSize: '2.5rem',
       },
+    container:{
+      margin:50,
+    },
     center:{
       display: "flex",
 	    flexDirection: "column",
       alignItems: "center",
       textAlign:"center",
       padding:70,
-      backgroundColor:'#e0fffd',
+      backgroundColor:'#f3ecff',
       fontSize:'1.5rem',
       color:'#112c7b',
     }
