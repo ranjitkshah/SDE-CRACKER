@@ -16,7 +16,7 @@ export default function Discussion() {
   const dummy = useRef();
   const firestore = firebase.firestore();
   const messagesRef = firestore.collection("messages");
-  const query = messagesRef.orderBy("createdAt").limit(25);
+  const query = messagesRef.orderBy("createdAt");
 
   const [messages] = useCollectionData(query, { idField: "id" });
   console.log(messages)
