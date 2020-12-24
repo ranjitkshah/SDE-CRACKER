@@ -1035,17 +1035,43 @@
         }
         ],
         "day27":[
-          "Operating System"
+          "Operating System",
+          {
+            "id":141,
+            "name":"Revise OS notes ",
+            "questionurl":"",
+            "yturl": ""
+          }
+
           
         ],
         "day28":[
-          "DBMS"
+          "DBMS",
+          {
+            "id":142,
+            "name":"Revise DBMS notes ",
+            "questionurl":"",
+            "yturl": ""
+          }
         ],
         "day29":[
-            "Computer Networks"
+            "Computer Networks",
+            {
+              "id":143,
+              "name":"Revise CN notes ",
+              "questionurl":"",
+              "yturl": ""
+            }
         ],
         "day30":[
-          "Projects"
+          "Projects",
+          {
+              "id":144,
+              "name":"Make a note of how will your represent your projects, and prepare all questions related to tech which you have used in your projects.",
+              "questionurl":"",
+              "yturl": ""
+          }
+
         ]
         
     } 
