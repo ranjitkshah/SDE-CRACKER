@@ -22,8 +22,6 @@ app.get("/api", (req, res) => {
 });
 
 app.post("/api/email", (req, res, next) => {
-  console.log(req.body);
-
   sendGrid.setApiKey(
     "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"
   );
@@ -48,7 +46,6 @@ app.post("/api/email", (req, res, next) => {
       });
     })
     .catch((err) => {
-      console.log("error: ", err);
       res.status(401).json({
         success: false,
       });

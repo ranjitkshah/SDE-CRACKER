@@ -13,7 +13,6 @@ import firebase from "firebase/app";
 function App() {
   const auth = firebase.auth();
   const [user] = useAuthState(auth);
-  console.log(user?.uid);
   return (
     <div className="App">
       <UserProvider>

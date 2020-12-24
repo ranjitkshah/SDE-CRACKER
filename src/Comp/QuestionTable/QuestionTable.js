@@ -19,15 +19,13 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 let done = [];
+let dayArray = [];
 
-export default function QuestionTable({ data }) {
+export default function QuestionTable({ index, data }) {
   const classes = useStyles();
   const [checked, setChecked] = React.useState([0]);
   const [open, setOpen] = React.useState(false);
-
   const user = React.useContext(UserContext);
-  console.log(user);
-
   useEffect(() => {
     getalldata();
   }, []);
@@ -41,7 +39,6 @@ export default function QuestionTable({ data }) {
       .doc(`${user?.uid}`)
       .get();
     done = snapshot.data() ? snapshot.data()["questionid"] : [];
-    console.log(done);
   }
 
   //to open list
@@ -51,7 +48,6 @@ export default function QuestionTable({ data }) {
 
   //for handling toggle event
   const handleToggle = (id) => {
-    console.log(id);
     if (done.includes(id)) {
       done = done.filter(function (item) {
         return item !== id;
@@ -78,14 +74,12 @@ export default function QuestionTable({ data }) {
       });
     }
     setOpen(!open);
-    console.log(done);
     addtoDB(done);
   };
 
   // add data to db
   const addtoDB = (done) => {
     const db = firebase.firestore();
-    console.log(done);
     const donequestion = db
       .collection("questiondone")
       .doc(user.uid)
@@ -102,6 +96,23 @@ export default function QuestionTable({ data }) {
         console.error("Error writing document: ", error);
       });
   };
+
+  // FOR DAY COMPLETION , IMPROVE IT
+  // let questionlist = data.slice(1).map((each) => each.id);
+  // if (
+  //   !dayArray.includes(index) &&
+  //   questionlist.every((i) => done.includes(i))
+  // ) {
+  //   dayArray.push(index);
+  // } else if (
+  //   dayArray.includes(index) &&
+  //   !questionlist.every((i) => done.includes(i))
+  // ) {
+  //   dayArray = dayArray.filter(function (item) {
+  //     return item != index;
+  //   });
+  // }
+ 
 
   return (
     <div className={classes.listDiv}>

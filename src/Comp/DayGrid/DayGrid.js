@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
@@ -6,18 +6,21 @@ import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
 import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
-import FastfoodIcon from "@material-ui/icons/Fastfood";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import firebase from "../../services/firebase";
 import QuestionTable from "../QuestionTable/QuestionTable";
 import { Avatar, CircularProgress, Fab } from "@material-ui/core";
+import { UserContext } from "../../providers/UserProvider";
 import { ArrowBackIos } from "@material-ui/icons";
 var quotes = require("../../quotes.json");
 
 export default function Daygrid() {
   const [question, setQuestion] = useState([]);
   const [showQuestion, setshowQuestion] = useState(false);
+  const user = useContext(UserContext);
+  const [dayIndex, setdayIndex] = useState(null);
+  const [dayDone, setdayDone] = useState([]);
   const [list, setlist] = useState([]);
   const text = quotes[Math.floor(Math.random() * (190 - 2 + 1)) + 2]?.text;
 
@@ -32,22 +35,20 @@ export default function Daygrid() {
       .doc("cb740fb0-3975-11eb-a35b-dfad7671627c")
       .get();
     let data = snapshot.data()["question"];
-    console.log(data);
     var result = Object.keys(data).map((key) => [data[key]]);
     result.sort();
-    // result.reverse();
     setQuestion(result);
   }
-  console.log(question);
+
 
   //questionlist
-  const questionset = (data) => {
+  const questionset = (data, index) => {
     setshowQuestion(true);
     setlist(data);
-    console.log(data);
+    setdayIndex(index);
+
   };
 
-  console.log(showQuestion);
   const classes = useStyles();
 
   return (
@@ -65,11 +66,13 @@ export default function Daygrid() {
                   return (
                     <TimelineItem
                       key={index}
-                      onClick={() => questionset(data[0])}
+                      onClick={() => questionset(data[0], index)}
                     >
                       <TimelineSeparator>
                         <TimelineDot>
-                         <Avatar className={classes.lettericon} >{index+1}</Avatar>
+                          <Avatar className={classes.lettericon}>
+                            {index + 1}
+                          </Avatar>
                         </TimelineDot>
                         <TimelineConnector />
                       </TimelineSeparator>
@@ -96,7 +99,7 @@ export default function Daygrid() {
                 <ArrowBackIos className={classes.extendedIcon} />
                 Back
               </Fab>
-              <QuestionTable data={list} />
+              <QuestionTable index={dayIndex} data={list} />
             </div>
           )}
           <div></div>
@@ -154,8 +157,8 @@ const useStyles = makeStyles((theme) => ({
     color: "grey",
   },
   lettericon: {
-    backgroundColor: 'white',
-    color: '#f50057',
-    fontWeight: 'bold',
-  }
+    backgroundColor: "white",
+    color: "#f50057",
+    fontWeight: "bold",
+  },
 }));

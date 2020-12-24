@@ -19,7 +19,7 @@ export default function Discussion() {
   const query = messagesRef.orderBy("createdAt");
 
   const [messages] = useCollectionData(query, { idField: "id" });
-  console.log(messages)
+
 
   const [formValue, setFormValue] = useState("");
 

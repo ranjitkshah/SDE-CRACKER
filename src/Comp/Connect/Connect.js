@@ -11,10 +11,8 @@ import Navbar from "../Navbar/Navbar";
 
 export default function Connect() {
   const onSubmit = (data) => {
-    console.log(data);
     Axios.post("https://secure-lake-31217.herokuapp.com/api/email", data)
       .then((res) => {
-        console.log("Email successfull sent!");
         toast.success(`🤝 we will get back to u soon!`, {
           position: "top-right",
           autoClose: 5000,
