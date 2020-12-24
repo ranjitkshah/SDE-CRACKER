@@ -1,0 +1,1054 @@
+{
+  "Questions":[
+    {
+      "question":{
+        "day1":[
+          "arrays"
+          ,
+
+        {
+          "id": 1,
+          "name": "Find the duplicate in an array of N+1 integers.",
+          "questionurl": "https://leetcode.com/problems/find-the-duplicate-number/",
+          "yturl": "https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=1"
+        },
+        {
+          "id": 2,
+          "name": "Sort an array of 0’s 1’s 2’s without using extra space or sorting algo",
+          "questionurl": "https://leetcode.com/problems/sort-colors/",
+          "yturl": "https://www.youtube.com/watch?v=oaVa-9wmpns&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2"
+        },
+        {
+          "id": 3,
+          "name": "Repeat and Missing Number",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1",
+          "yturl": "https://www.youtube.com/watch?v=5nMGY4VUoRY&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=3"
+        },
+        {
+          "id": 4,  
+          "name": "Merge two sorted Arrays without extra space ",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1",
+          "yturl": "https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4"
+        },
+        {
+          "id": 5,
+          "name": "Kadane’s Algorithm",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1",
+          "yturl": "https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4"
+        },
+         {
+          "id": 6,
+          "name": "Merge Overlapping Subintervals",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/overlapping-intervals4919/1",
+          "yturl": "https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6"
+        }
+      ],
+
+      
+       "day2":[
+         "Arrays(2)",
+        {
+          "id": 7,
+          "name": "Set Matrix Zeros",
+          "questionurl": "https://leetcode.com/problems/set-matrix-zeroes/",
+          "yturl": "https://www.youtube.com/watch?v=M65xBewcqcI&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=7"
+        },
+        {
+         "id":8,
+         "name":"Pascal Triangle",
+         "questionurl": "https://leetcode.com/problems/pascals-triangle/",
+         "yturl": "https://www.youtube.com/watch?v=6FLvhQjZqvM&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=8"
+        },
+        {
+          "id":9,
+          "name":"Next Permutation",
+          "questionurl": "https://leetcode.com/problems/next-permutation/",
+          "yturl": "https://www.youtube.com/watch?v=LuLCLgMElus&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=9"
+        },
+        {
+          "id":10,
+          "name":"Inversion of Array",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1",
+          "yturl": "https://www.youtube.com/watch?v=kQ1mJlwW-c0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=10"
+        },
+        {
+          "id":11,
+          "name":"Stock Buy and Sell ",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1",
+          "yturl": "https://www.youtube.com/watch?v=eMSfBgbiEjk&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=11"
+        },
+        {
+          "id":12,
+          "name":"Rotate Matrix",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/lets-play/0",
+          "yturl": "https://www.youtube.com/watch?v=kQ1mJlwW-c0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=12"
+        }
+       ],
+       
+       "day3":[
+         "Arrays/maths",
+        {
+          "id": 13,
+          "name": "Search in a 2D matrix",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/search-in-a-matrix17201720/1",
+          "yturl": "https://www.youtube.com/watch?v=ZYpYur0znng&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=13"
+        },
+        {
+         "id":14,
+         "name":"Pow(X,n)",
+         "questionurl": "https://leetcode.com/problems/powx-n/",
+         "yturl": "https://www.youtube.com/watch?v=6FLvhQjZqvM&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=14"
+        },
+        {
+          "id":15,
+          "name":"Majority Element (>N/2 times)",
+          "questionurl": "https://leetcode.com/problems/next-permutation/",
+          "yturl": "https://www.youtube.com/watch?v=LuLCLgMElus&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=9"
+        },
+        {
+          "id":10,
+          "name":"Inversion of Array",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1",
+          "yturl": "https://www.youtube.com/watch?v=kQ1mJlwW-c0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=10"
+        },
+        {
+          "id":11,
+          "name":"Stock Buy and Sell ",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1",
+          "yturl": "https://www.youtube.com/watch?v=eMSfBgbiEjk&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=11"
+        },
+        {
+          "id":12,
+          "name":"Rotate Matrix",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/lets-play/0",
+          "yturl": "https://www.youtube.com/watch?v=kQ1mJlwW-c0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=12"
+        }
+       ],
+       "day4":[
+         "Hashing",
+        {
+          "id": 13,
+          "name": "2 Sum problem ",
+          "questionurl": "https://leetcode.com/problems/two-sum/",
+          "yturl": "https://www.youtube.com/watch?v=dRUpbt8vHpo&list=PLgUwDviBIf0rVwua0kKYlsS_ik_1lyVK_&index=1"
+        },
+        {
+         "id":14,
+         "name":"4 Sum problem",
+         "questionurl": "https://leetcode.com/problems/4sum/",
+         "yturl": "https://www.youtube.com/watch?v=4ggF3tXIAp0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=20 "
+        },
+        {
+          "id":15,
+          "name":"Longest Consecutive Sequence ",
+          "questionurl": "https://leetcode.com/problems/longest-consecutive-sequence/",
+          "yturl": "https://www.youtube.com/watch?v=qgizvmgeyUM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=21 "
+        },
+        {
+          "id":10,
+          "name":"Largest Subarray with 0 sum ",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1",
+          "yturl": "https://www.youtube.com/watch?v=xmguZ6GbatA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=22"
+        },
+        {
+          "id":11,
+          "name":"Count number of subarrays with given XOR",
+          "questionurl": "https://www.geeksforgeeks.org/count-number-subarrays-given-xor/",
+          "yturl": "https://www.youtube.com/watch?v=lO9R5CaGRPY&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=23 "
+        },
+        {
+          "id":12,
+          "name":"Longest substring without repea",
+          "questionurl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+          "yturl": "https://www.youtube.com/watch?v=qtVh-XEpsJo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=25"
+        }
+       ],
+       
+       "day5":[
+         "LinkedList",
+        {
+          "id": 13,
+          "name": "Reverse a LinkedList",
+          "questionurl": "https://leetcode.com/problems/reverse-linked-list/",
+          "yturl": "https://www.youtube.com/watch?v=iRtLEoL-r-g&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=26 "
+        },
+        {
+         "id":13,
+         "name":"Find middle of LinkedList",
+         "questionurl": "https://leetcode.com/problems/middle-of-the-linked-list/",
+         "yturl": "https://www.youtube.com/watch?v=sGdwSH8RK-o&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=27"
+        },
+        {
+          "id":14,
+          "name":"Merge two sorted Linked List ",
+          "questionurl": "https://leetcode.com/problems/merge-two-sorted-lists/",
+          "yturl": "https://www.youtube.com/watch?v=Xb4slcp1U38&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=28"
+        },
+        {
+          "id":15,
+          "name":"Remove N-th node from back of LinkedList",
+          "questionurl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+          "yturl": "https://www.youtube.com/watch?v=Lhu3MsXZy-Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=29"
+        },
+        {
+          "id":16,
+          "name":"Delete a given Node when a node is given.O(1) solution",
+          "questionurl": "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+          "yturl": "https://www.youtube.com/watch?v=icnp4FJdZ_c&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=30"
+        },
+        {
+          "id":17,
+          "name":"Add two numbers as LinkedList ",
+          "questionurl": "https://leetcode.com/problems/add-two-numbers/",
+          "yturl": "https://www.youtube.com/watch?v=LBVsXSMOIk4&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=31"
+        }
+       ],
+       "day6":[
+         "LinkedList",
+        {
+          "id": 18,
+          "name": "Find intersection point of Y LinkedList",
+          "questionurl": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+          "yturl": "https://www.youtube.com/watch?v=u4FWXfgS8jw&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=32"
+        },
+        {
+         "id":19,
+         "name":"Detect a cycle in Linked List",
+         "questionurl": "https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1",
+         "yturl": "https://www.youtube.com/watch?v=354J83hX7RI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=33"
+        },
+        {
+          "id":20,
+          "name":"Reverse a LinkedList in groups of size k. ",
+          "questionurl": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+          "yturl": "https://www.youtube.com/watch?v=Of0HPkk3JgI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=33"
+        },
+        {
+          "id":21,
+          "name":"Check if a LinkedList is palindrome or not.",
+          "questionurl": "https://leetcode.com/problems/palindrome-linked-list/",
+          "yturl": "https://www.youtube.com/watch?v=-DtNInqFUXs&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=35"
+        },
+        {
+          "id":22,
+          "name":"Find the starting point of the Loop of LinkedList",
+          "questionurl": "https://leetcode.com/problems/linked-list-cycle-ii/",
+          "yturl": "https://www.youtube.com/watch?v=QfbOhn0WZ88&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=36"
+        },
+        {
+          "id":23,
+          "name":"Flattening of a LinkedList",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1",
+          "yturl": "https://www.youtube.com/watch?v=ysytSSXpAI0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=37"
+        },
+        {
+          "id":24,
+          "name":"Rotate a LinkedList",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/1",
+          "yturl": "https://www.youtube.com/watch?v=9VPm6nEbVPA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=38"
+        }
+       ],
+       "day7":[
+         "2-pointer",
+        {
+          "id": 25,
+          "name": "Clone a Linked List with random and next pointer",
+          "questionurl": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+          "yturl": "https://www.youtube.com/watch?v=VNf6VynfpdM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=39"
+        },
+        {
+         "id":26,
+         "name":"3 sum",
+         "questionurl": "https://leetcode.com/problems/3sum/",
+         "yturl": "https://www.youtube.com/watch?v=onLoX6Nhvmg&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=40"
+        },
+        {
+          "id":27,
+          "name":"Trapping rainwater",
+          "questionurl": "https://leetcode.com/problems/trapping-rain-water/",
+          "yturl": ""
+        },
+        {
+          "id":28,
+          "name":"Remove Duplicate from Sorted array",
+          "questionurl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+          "yturl": ""
+        },
+        {
+          "id":29,
+          "name":"Max continuous number of 1’s",
+          "questionurl": "https://leetcode.com/problems/max-consecutive-ones/",
+          "yturl": ""
+        }
+       ],
+       "day8":[
+         "Greedy",
+        {
+          "id": 30,
+          "name": "N meeting in one room",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1",
+          "yturl": ""
+        },
+        {
+         "id":31,
+         "name":"Activity Selection",
+         "questionurl": "https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1",
+         "yturl": ""
+        },
+        {
+          "id":32,
+          "name":"Greedy algorithm to find minimum number of coins",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/coin-piles/0",
+          "yturl": ""
+        },
+        {
+          "id":33,
+          "name":"Fractional Knapsack Problem",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1",
+          "yturl": ""
+        },
+        {
+          "id":34,
+          "name":"Minimum number of platforms required for a railway",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1",
+          "yturl": ""
+        },
+        {
+          "id":35,
+          "name":"Job sequencing Problem",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1",
+          "yturl": ""
+        }
+       ],
+       "day9":[
+         "Backtracking",
+        {
+          "id": 36,
+          "name": "N queens Problem",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/n-queen-problem/0",
+          "yturl": ""
+        },
+        {
+         "id":37,
+         "name":"Sudoko",
+         "questionurl": "https://practice.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1",
+         "yturl": ""
+        },
+        {
+          "id":38,
+          "name":"M coloring Problem (Graph prob)",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1",
+          "yturl": ""
+        },
+        {
+          "id":39,
+          "name":"Rat in a Maze",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1",
+          "yturl": ""
+        },
+        {
+          "id":40,
+          "name":"Print all Permutations of a string/array",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0",
+          "yturl": ""
+        },
+        {
+          "id":41,
+          "name":"Word Break (print all ways)",
+          "questionurl": "https://leetcode.com/problems/word-break/",
+          "yturl": ""
+        }
+       ],
+       "day10":[
+         "Backtracking",
+        {
+          "id": 42,
+          "name": "Combination sum-1",
+          "questionurl": "https://leetcode.com/problems/combination-sum/",
+          "yturl": ""
+        },
+        {
+         "id":43,
+         "name":"Combination sum-2",
+         "questionurl": "https://leetcode.com/problems/combination-sum-ii/",
+         "yturl": ""
+        },
+        {
+          "id":44,
+          "name":"Palindrome Partioning",
+          "questionurl": "https://leetcode.com/problems/palindrome-partitioning/",
+          "yturl": ""
+        },
+        {
+          "id":45,
+          "name":"Subset Sum-1",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
+          "yturl": ""
+        },
+        {
+          "id":46,
+          "name":"Subset Sum-2",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/minimum-sum-partition3317/1",
+          "yturl": ""
+        },
+        {
+          "id":47,
+          "name":"K-th permutation Sequence",
+          "questionurl": "https://leetcode.com/problems/permutation-sequence/",
+          "yturl": ""
+        }
+       ],
+       "day11":[
+         "Divide and Conquer",
+        {
+          "id": 48,
+          "name": "1/N-th root of an integer (use binary search) (square root, cube root, ..)",
+          "questionurl": "https://www.geeksforgeeks.org/calculating-n-th-real-root-using-binary-search/",
+          "yturl": ""
+        },
+        {
+         "id":49,
+         "name":"Matrix Median",
+         "questionurl": "https://www.interviewbit.com/problems/matrix-median/",
+         "yturl": ""
+        },
+        {
+          "id":50,
+          "name":"Find the element that appears once in sorted array, and rest element appears twice (Binary search) ",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/find-the-element-that-appears-once-in-sorted-array0624/1",
+          "yturl": ""
+        },
+        {
+          "id":51,
+          "name":"Search element in a sorted and rotated array/ find pivot where it is rotated",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/search-in-a-rotated-array/0",
+          "yturl": ""
+        },
+        {
+          "id":52,
+          "name":"Median of 2 sorted arrays",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/find-the-median0527/1",
+          "yturl": ""
+        },
+        {
+          "id":53,
+          "name":"K-th element of two sorted arrays",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array/0",
+          "yturl": ""
+        }
+       ],
+       "day12":[
+         "Bits",
+        {
+          "id": 54,
+          "name": "Check if a number if a power of 2 or not in O(1)",
+          "questionurl": "https://www.geeksforgeeks.org/calculating-n-th-real-root-using-binary-search/",
+          "yturl": ""
+        },
+        {
+         "id":55,
+         "name":"Count total set bits",
+         "questionurl": "https://practice.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1",
+         "yturl": ""
+        },
+        {
+          "id":56,
+          "name":"Divide Integers without / operator",
+          "questionurl": "https://leetcode.com/problems/divide-two-integers/",
+          "yturl": ""
+        },
+        {
+          "id":57,
+          "name":"Power Set (this is very important)",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/power-set4302/1",
+          "yturl": ""
+        },
+        {
+          "id":58,
+          "name":"Find MSB in o(1)",
+          "questionurl": "https://www.geeksforgeeks.org/find-significant-set-bit-number/",
+          "yturl": ""
+        },
+        {
+          "id":59,
+          "name":"Find square of a number without using multiplication or division operators",
+          "questionurl": "https://www.geeksforgeeks.org/calculate-square-of-a-number-without-using-and-pow/",
+          "yturl": ""
+        }
+       ],
+       "day13":[
+         "Stack and Queue",
+        {
+          "id": 60,
+          "name": "Implement Stack / Implement Queue",
+          "questionurl": "https://www.geeksforgeeks.org/stack-data-structure-introduction-program/",
+          "yturl": ""
+        },
+        {
+         "id":61,
+         "name":"BFS",
+         "questionurl": "https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1",
+         "yturl": ""
+        },
+        {
+          "id":62,
+          "name":"Implement Stack using Queue",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/stack-using-two-queues/1",
+          "yturl": ""
+        },
+        {
+          "id":63,
+          "name":"Implement Queue using Stack",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/queue-using-two-stacks/1",
+          "yturl": ""
+        },
+        {
+          "id":64,
+          "name":"Check for balanced parentheses",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/parenthesis-checker2744/1",
+          "yturl": ""
+        },
+        {
+          "id":65,
+          "name":"Next Greater Element",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1",
+          "yturl": ""
+        }
+       ],
+       "day14":[
+         "Stack and Queue",
+        {
+          "id": 66,
+          "name": "Next Smaller Element ",
+          "questionurl": "https://www.geeksforgeeks.org/next-smaller-element/",
+          "yturl": ""
+        },
+        {
+         "id":67,
+         "name":"LRU cache (vvvv. imp)",
+         "questionurl": "https://practice.geeksforgeeks.org/problems/lru-cache/1",
+         "yturl": ""
+        },
+        {
+          "id":68,
+          "name":"Largest rectangle in histogram",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram-1587115620/1",
+          "yturl": ""
+        },
+        {
+          "id":69,
+          "name":"Sliding Window maximum",
+          "questionurl": "https://leetcode.com/problems/sliding-window-maximum/",
+          "yturl": ""
+        },
+        {
+          "id":70,
+          "name":"Implement Min Stack",
+          "questionurl": "https://leetcode.com/problems/min-stack/",
+          "yturl": ""
+        },
+        {
+          "id":72,
+          "name":"Rotten Orange (Using BFS)",
+          "questionurl": "https://leetcode.com/problems/rotting-oranges/",
+          "yturl": ""
+        }
+       ],
+       "day15":[
+         "String",
+        {
+          "id": 73,
+          "name": "Reverse Words in a String",
+          "questionurl": "https://leetcode.com/problems/reverse-words-in-a-string/",
+          "yturl": ""
+        },
+        {
+         "id":74,
+         "name":"Longest Palindrome in a string",
+         "questionurl": "https://practice.geeksforgeeks.org/problems/longest-palindrome-in-a-string/0",
+         "yturl": ""
+        },
+        {
+          "id":75,
+          "name":"Roman Number to Integer and vice versa",
+          "questionurl": "https://leetcode.com/problems/roman-to-integer/",
+          "yturl": ""
+        },
+        {
+          "id":76,
+          "name":"Implement ATOI/STRSTR",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/implement-atoi/1",
+          "yturl": ""
+        },
+        {
+          "id":77,
+          "name":"Longest Common Prefix",
+          "questionurl": "https://leetcode.com/problems/longest-common-prefix/",
+          "yturl": ""
+        },
+        {
+          "id":78,
+          "name":"Rabin Karp",
+          "questionurl": "https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/",
+          "yturl": ""
+        }
+       ],
+       "day16":[
+         "String",
+        {
+          "id": 79,
+          "name": "Prefix Function/Z-Function",
+          "questionurl": "geeksforgeeks.org/z-algorithm-linear-time-pattern-searching-algorithm/",
+          "yturl": ""
+        },
+        {
+         "id":80,
+         "name":"KMP algo",
+         "questionurl": "https://practice.geeksforgeeks.org/problems/longest-prefix-suffix/0",
+         "yturl": ""
+        },
+        {
+          "id":81,
+          "name":"Minimum characters needed to be inserted in the beginning to make it palindromic.",
+          "questionurl": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/",
+          "yturl": ""
+        },
+        {
+          "id":82,
+          "name":"Check for Anagrams",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/anagram-1587115620/1",
+          "yturl": ""
+        },
+        {
+          "id":83,
+          "name":"Count and Say",
+          "questionurl": "https://leetcode.com/problems/count-and-say/",
+          "yturl": ""
+        },
+        {
+          "id":84,
+          "name":"Compare version numbers",
+          "questionurl": "https://leetcode.com/problems/compare-version-numbers/",
+          "yturl": ""
+        }
+       ],
+       "day17":[
+         "Binary Tree",
+        {
+          "id": 85,
+          "name": "Inorder Traversal (with recursion and without recursion) ",
+          "questionurl": "https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion/",
+          "yturl": ""
+        },
+        {
+         "id":86,
+         "name":"Preorder Traversal (with recursion and without recursion)",
+         "questionurl": "https://www.geeksforgeeks.org/iterative-preorder-traversal/",
+         "yturl": ""
+        },
+        {
+          "id":87,
+          "name":"Postorder Traversal (with recursion and without recursion)",
+          "questionurl": "https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/",
+          "yturl": ""
+        },
+        {
+          "id":88,
+          "name":"LeftView Of Binary Tree",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1",
+          "yturl": ""
+        },
+        {
+          "id":89,
+          "name":"Bottom View of Binary Tree",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1",
+          "yturl": ""
+        },
+        {
+          "id":90,
+          "name":"Top View of Binary Tree",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1",
+          "yturl": ""
+        }
+       ],
+        "day18":[
+         "Binary Tree",
+        {
+          "id": 86,
+          "name": "Inorder Traversal (with recursion and without recursion) ",
+          "questionurl": "https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion/",
+          "yturl": ""
+        },
+        {
+         "id":87,
+         "name":"Preorder Traversal (with recursion and without recursion)",
+         "questionurl": "https://www.geeksforgeeks.org/iterative-preorder-traversal/",
+         "yturl": ""
+        },
+        {
+          "id":88,
+          "name":"Postorder Traversal (with recursion and without recursion)",
+          "questionurl": "https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/",
+          "yturl": ""
+        },
+        {
+          "id":89,
+          "name":"LeftView Of Binary Tree",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1",
+          "yturl": ""
+        },
+        {
+          "id":89,
+          "name":"Bottom View of Binary Tree",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1",
+          "yturl": ""
+        },
+        {
+          "id":90,
+          "name":"Top View of Binary Tree",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1",
+          "yturl": ""
+        }
+       ],
+       "day19":[
+         "Binary Tree",
+        {
+          "id":91,
+          "name": "Maximum path sum",
+          "questionurl": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+          "yturl": ""
+        },
+        {
+         "id":92,
+         "name":"Construct Binary Tree from inorder and preorder",
+         "questionurl": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+         "yturl": ""
+        },
+        {
+          "id":93,
+          "name":"Construct Binary Tree from Inorder and Postorder",
+          "questionurl": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
+          "yturl": ""
+        },
+        {
+          "id":94,
+          "name":"Symmetric Binary Tree",
+          "questionurl": "https://leetcode.com/problems/symmetric-tree/",
+          "yturl": ""
+        },
+        {
+          "id":95,
+          "name":"Flatten Binary Tree to LinkedList",
+          "questionurl": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+          "yturl": ""
+        },
+        {
+          "id":96,
+          "name":"Check if Binary Tree is mirror of itself or not",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/symmetric-tree/1",
+          "yturl": ""
+        }
+       ],
+       "day20":[
+         "Binary Search Tree",
+        {
+          "id":97,
+          "name": "Populate Next Right pointers of Tree",
+          "questionurl": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/",
+          "yturl": ""
+        },
+        {
+         "id":98,
+         "name":"Search a given key in binary Seach tree",
+         "questionurl": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+         "yturl": ""
+        },
+        {
+          "id":99,
+          "name":"Construct BST from given keys",
+          "questionurl": "https://www.techiedelight.com/construct-balanced-bst-given-keys/",
+          "yturl": ""
+        },
+        {
+          "id":100,
+          "name":"Check is a BT is BST or not",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/check-for-bst/1",
+          "yturl": ""
+        },
+        {
+          "id":101,
+          "name":"Find LCA of two nodes in BST",
+          "questionurl": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+          "yturl": ""
+        },
+        {
+          "id":102,
+          "name":"Find the inorder predecessor/successor of a given Key in BST",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1",
+          "yturl": ""
+        }
+       ],
+       "day21":[
+         "Binary Search Tree",
+        {
+          "id":103,
+          "name": "Floor and Ceil in a BST",
+          "questionurl": "https://www.geeksforgeeks.org/floor-and-ceil-from-a-bst/",
+          "yturl": ""
+        },
+        {
+         "id":104,
+         "name":"Find K-th smallest and K-th largest element in BST (2 different Questions)",
+         "questionurl": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+         "yturl": ""
+        },
+        {
+          "id":105,
+          "name":"Find a pair with a given sum in BST",
+          "questionurl": "https://www.geeksforgeeks.org/find-pair-given-sum-bst/",
+          "yturl": ""
+        },
+        {
+          "id":106,
+          "name":"BST iterator",
+          "questionurl": "https://leetcode.com/problems/binary-search-tree-iterator/",
+          "yturl": ""
+        },
+        {
+          "id":107,
+          "name":"Size of the largest BST in a Binary Tree",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/largest-bst/1",
+          "yturl": ""
+        },
+        {
+          "id":108,
+          "name":"Serialize and deserialize Binary Tree",
+          "questionurl": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+          "yturl": ""
+        }
+       ],
+       "day22":[
+         "Mixed Questions",
+        {
+          "id":109,
+          "name": "Binary Tree to Double Linked List ",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1",
+          "yturl": ""
+        },
+        {
+         "id":110,
+         "name":"Find median in a stream of running integers",
+         "questionurl": "https://practice.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1",
+         "yturl": ""
+        },
+        {
+          "id":111,
+          "name":"K-th largest element in a stream",
+          "questionurl": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+          "yturl": ""
+        },
+        {
+          "id":112,
+          "name":"Distinct numbers in Window",
+          "questionurl": "https://www.interviewbit.com/problems/distinct-numbers-in-window/",
+          "yturl": ""
+        },
+        {
+          "id":113,
+          "name":"K-th largest element in an unsorted array.",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1",
+          "yturl": ""
+        },
+        {
+          "id":114,
+          "name":"Flood-fill Algorithm",
+          "questionurl": "https://www.geeksforgeeks.org/flood-fill-algorithm-implement-fill-paint/",
+          "yturl": ""
+        }
+       ],
+       "day23":[
+         "Graph",
+        {
+          "id":115,
+          "name": "Clone a graph (Not that easy as it looks)",
+          "questionurl": "https://leetcode.com/problems/clone-graph/",
+          "yturl": ""
+        },
+        {
+         "id":116,
+         "name":"DFS",
+         "questionurl": "https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/discuss/732001/DFS-to-traverse-Graph",
+         "yturl": ""
+        },
+        {
+          "id":117,
+          "name":"BFS",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1",
+          "yturl": ""
+        },
+        {
+          "id":118,
+          "name":"Detect A cycle in Undirected Graph/Directed Graph",
+          "questionurl": "https://www.geeksforgeeks.org/detect-cycle-undirected-graph/",
+          "yturl": ""
+        },
+        {
+          "id":119,
+          "name":"Topo Sort",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/topological-sort/1",
+          "yturl": ""
+        },
+        {
+          "id":120,
+          "name":"Number of islands (Do in Grid and Graph both) ",
+          "questionurl":"https://leetcode.com/problems/number-of-islands",
+          "yturl": ""
+        }
+        ],
+        "day24":[
+         "Graph",
+        {
+          "id":121,
+          "name": "SCC(using KosaRaju’s algo)",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1",
+          "yturl": ""
+        },
+        {
+         "id":122,
+         "name":"Djisktra’s Algorithm",
+         "questionurl": "https://practice.geeksforgeeks.org/problems/shortest-path-from-1-to-n0156/1",
+         "yturl": ""
+        },
+        {
+          "id":123,
+          "name":"Bellman Ford Algo",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/negative-weight-cycle/0",
+          "yturl": ""
+        },
+        {
+          "id":124,
+          "name":"Floyd Warshall Algorithm",
+          "questionurl": "https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/",
+          "yturl": ""
+        },
+        {
+          "id":125,
+          "name":"MST using Prim’s Algo",
+          "questionurl": "https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/",
+          "yturl": ""
+        },
+        {
+          "id":126,
+          "name":"MST using Kruskal’s Algo",
+          "questionurl":"https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/",
+          "yturl": ""
+        }
+        ],
+        "day25":[
+         "Dynamic Programming",
+        {
+          "id":127,
+          "name": "Max Product Subarray",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1",
+          "yturl": ""
+        },
+        {
+         "id":128,
+         "name":"Longest Increasing Subsequence",
+         "questionurl": "https://leetcode.com/problems/longest-increasing-subsequence/",
+         "yturl": ""
+        },
+        {
+          "id":129,
+          "name":"Longest Common Subsequence",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0",
+          "yturl": ""
+        },
+        {
+          "id":130,
+          "name":"0-1 Knapsack",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1",
+          "yturl": ""
+        },
+        {
+          "id":131,
+          "name":"Edit Distance",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/edit-distance/0",
+          "yturl": ""
+        },
+        {
+          "id":132,
+          "name":"Maximum sum increasing subsequence",
+          "questionurl":"https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence/0",
+          "yturl": ""
+        },
+        {
+          "id":133,
+          "name":"Matrix Chain Multiplication ",
+          "questionurl":"https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication/0",
+          "yturl": ""
+        }
+        ],
+        "day26":[
+         "Dynamic Programming",
+        {
+          "id":134,
+          "name": "Maximum sum path in matrix",
+          "questionurl":"https://leetcode.com/problems/minimum-path-sum/",
+          "yturl": ""
+        },
+        {
+         "id":135,
+         "name":"Coin change",
+         "questionurl": "https://leetcode.com/problems/coin-change/",
+         "yturl": ""
+        },
+        {
+          "id":136,
+          "name":"Subset Sum",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
+          "yturl": ""
+        },
+        {
+          "id":137,
+          "name":"Rod Cutting",
+          "questionurl": "https://practice.geeksforgeeks.org/problems/cutted-segments/0",
+          "yturl": ""
+        },
+        {
+          "id":138,
+          "name":"Egg Dropping",
+          "questionurl": "hhttps://practice.geeksforgeeks.org/problems/egg-dropping-puzzle/0",
+          "yturl": ""
+        },
+        {
+          "id":139,
+          "name":"Word Break",
+          "questionurl":"https://leetcode.com/problems/word-break/",
+          "yturl": ""
+        },
+        {
+          "id":140,
+          "name":"Palindrome Partitioning (MCM Variation)",
+          "questionurl":"https://leetcode.com/problems/palindrome-partitioning-ii/",
+          "yturl": ""
+        }
+        ],
+        "day27":[
+          "Operating System"
+          
+        ],
+        "day28":[
+          "DBMS"
+        ],
+        "day29":[
+            "Computer Networks"
+        ],
+        "day30":[
+          "Projects"
+        ]
+        
+    } 
+}
+]
+}
