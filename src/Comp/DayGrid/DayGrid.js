@@ -32,13 +32,17 @@ export default function Daygrid() {
     const snapshot = await firebase
       .firestore()
       .collection("Questions")
-      .doc("cb740fb0-3975-11eb-a35b-dfad7671627c")
+      .doc("7e7251b0-463e-11eb-aeb1-23d6876ca652")
       .get();
     let data = snapshot.data()["question"];
+    console.log(data)
     var result = Object.keys(data).map((key) => [data[key]]);
-    result.sort();
+    console.log(result.sort())
+  
     setQuestion(result);
   }
+  console.log(question)
+
 
 
   //questionlist
@@ -81,7 +85,7 @@ export default function Daygrid() {
                           <Typography variant="h6" component="h1">
                             Day {index + 1}
                           </Typography>
-                          <Typography>{data[0][0]}</Typography>
+                          <Typography className={classes.truncate} >{data[0][0]}</Typography>
                         </Paper>
                       </TimelineContent>
                     </TimelineItem>
@@ -161,4 +165,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#f50057",
     fontWeight: "bold",
   },
+  // truncate: {
+  //   whiteSpace: 'nowrap',
+  //   overflow: 'hidden',
+  //   textOverflow: 'ellipsis',
+  // }
 }));

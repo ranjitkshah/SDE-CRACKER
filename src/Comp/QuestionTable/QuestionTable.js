@@ -161,7 +161,7 @@ export default function QuestionTable({ index, data }) {
                         <IconButton
                           edge="end"
                           target="_blank"
-                          href="https://stackoverflow.com/questions/51940157/how-to-align-horizontal-icon-and-text-in-material-ui"
+                          href={data?.questionurl}
                           aria-label="comments"
                         >
                           <img
@@ -171,7 +171,7 @@ export default function QuestionTable({ index, data }) {
                         </IconButton>
                       </Tooltip>
                       <Tooltip enterTouchDelay={100} title="youtube help video">
-                        <IconButton edge="end" aria-label="youtube">
+                        <IconButton edge="end" aria-label="youtube" href={data?.yturl} >
                           <img
                             className={classes.logo}
                             src="https://img.icons8.com/fluent/48/000000/youtube-play.png"
