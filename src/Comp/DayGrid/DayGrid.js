@@ -36,7 +36,7 @@ export default function Daygrid() {
       .get();
     let data = snapshot.data()["question"];
     var result = Object.keys(data).map((key) => [data[key]]);
-    setQuestion(result);
+    setQuestion(result.sort());
   }
 
 
