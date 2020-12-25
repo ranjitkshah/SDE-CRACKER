@@ -26,7 +26,7 @@ export default function Profile() {
       .doc(`${user?.uid}`)
       .get();
 
-    settotalQuestion(snapshot1.data()["questionid"]);
+    settotalQuestion(snapshot1.data()?snapshot1.data()["questionid"]:[]);
 
     const snapshot2 = await firebase
     .firestore()
@@ -56,7 +56,7 @@ export default function Profile() {
                 <b> attempted </b>: {totalQuestion.length} tasks
               </Typography>
               <Typography>
-                <b> your rank 🏆 </b>: {userRank} out of {allUsersDone.length} users
+                <b> your rank 🏆 </b>: {userRank?userRank:allUsersDone.length} out of {allUsersDone.length} users
               </Typography>
             </div>
           </Card>

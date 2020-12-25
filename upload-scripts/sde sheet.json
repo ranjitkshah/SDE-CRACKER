@@ -3,7 +3,7 @@
     {
       "question":{
         "day1":[
-          "arrays"
+          "01arrays"
           ,
 
         {
@@ -46,7 +46,7 @@
 
       
        "day2":[
-         "Arrays(2)",
+         "02Arrays(2)",
         {
           "id": 7,
           "name": "Set Matrix Zeros",
@@ -86,7 +86,7 @@
        ],
        
        "day3":[
-         "Arrays/maths",
+         "03Arrays/maths",
         {
           "id": 13,
           "name": "Search in a 2D matrix",
@@ -125,7 +125,7 @@
         }
        ],
        "day4":[
-         "Hashing",
+         "04Hashing",
         {
           "id": 13,
           "name": "2 Sum problem ",
@@ -165,7 +165,7 @@
        ],
        
        "day5":[
-         "LinkedList",
+         "05LinkedList",
         {
           "id": 13,
           "name": "Reverse a LinkedList",
@@ -204,7 +204,7 @@
         }
        ],
        "day6":[
-         "LinkedList",
+         "06LinkedList",
         {
           "id": 18,
           "name": "Find intersection point of Y LinkedList",
@@ -249,7 +249,7 @@
         }
        ],
        "day7":[
-         "2-pointer",
+         "072-pointer",
         {
           "id": 25,
           "name": "Clone a Linked List with random and next pointer",
@@ -282,7 +282,7 @@
         }
        ],
        "day8":[
-         "Greedy",
+         "08Greedy",
         {
           "id": 30,
           "name": "N meeting in one room",
@@ -321,7 +321,7 @@
         }
        ],
        "day9":[
-         "Backtracking",
+         "09Backtracking",
         {
           "id": 36,
           "name": "N queens Problem",
@@ -360,7 +360,7 @@
         }
        ],
        "day10":[
-         "Backtracking",
+         "10Backtracking",
         {
           "id": 42,
           "name": "Combination sum-1",
@@ -399,7 +399,7 @@
         }
        ],
        "day11":[
-         "Divide and Conquer",
+         "11Divide and Conquer",
         {
           "id": 48,
           "name": "1/N-th root of an integer (use binary search) (square root, cube root, ..)",
@@ -438,7 +438,7 @@
         }
        ],
        "day12":[
-         "Bits",
+         "12Bits",
         {
           "id": 54,
           "name": "Check if a number if a power of 2 or not in O(1)",
@@ -477,7 +477,7 @@
         }
        ],
        "day13":[
-         "Stack and Queue",
+         "13Stack and Queue",
         {
           "id": 60,
           "name": "Implement Stack / Implement Queue",
@@ -516,7 +516,7 @@
         }
        ],
        "day14":[
-         "Stack and Queue",
+         "14Stack and Queue",
         {
           "id": 66,
           "name": "Next Smaller Element ",
@@ -555,7 +555,7 @@
         }
        ],
        "day15":[
-         "String",
+         "15String",
         {
           "id": 73,
           "name": "Reverse Words in a String",
@@ -594,7 +594,7 @@
         }
        ],
        "day16":[
-         "String",
+         "16String",
         {
           "id": 79,
           "name": "Prefix Function/Z-Function",
@@ -633,7 +633,7 @@
         }
        ],
        "day17":[
-         "Binary Tree",
+         "17Binary Tree",
         {
           "id": 85,
           "name": "Inorder Traversal (with recursion and without recursion) ",
@@ -672,7 +672,7 @@
         }
        ],
         "day18":[
-         "Binary Tree",
+         "18Binary Tree",
         {
           "id": 86,
           "name": "Inorder Traversal (with recursion and without recursion) ",
@@ -711,7 +711,7 @@
         }
        ],
        "day19":[
-         "Binary Tree",
+         "19Binary Tree",
         {
           "id":91,
           "name": "Maximum path sum",
@@ -750,7 +750,7 @@
         }
        ],
        "day20":[
-         "Binary Search Tree",
+         "20Binary Search Tree",
         {
           "id":97,
           "name": "Populate Next Right pointers of Tree",
@@ -789,7 +789,7 @@
         }
        ],
        "day21":[
-         "Binary Search Tree",
+         "21Binary Search Tree",
         {
           "id":103,
           "name": "Floor and Ceil in a BST",
@@ -828,7 +828,7 @@
         }
        ],
        "day22":[
-         "Mixed Questions",
+         "22Mixed Questions",
         {
           "id":109,
           "name": "Binary Tree to Double Linked List ",
@@ -867,7 +867,7 @@
         }
        ],
        "day23":[
-         "Graph",
+         "23Graph",
         {
           "id":115,
           "name": "Clone a graph (Not that easy as it looks)",
@@ -906,7 +906,7 @@
         }
         ],
         "day24":[
-         "Graph",
+         "24Graph",
         {
           "id":121,
           "name": "SCC(using KosaRaju’s algo)",
@@ -945,7 +945,7 @@
         }
         ],
         "day25":[
-         "Dynamic Programming",
+         "25Dynamic Programming",
         {
           "id":127,
           "name": "Max Product Subarray",
@@ -990,7 +990,7 @@
         }
         ],
         "day26":[
-         "Dynamic Programming",
+         "26Dynamic Programming",
         {
           "id":134,
           "name": "Maximum sum path in matrix",
@@ -1035,7 +1035,7 @@
         }
         ],
         "day27":[
-          "Operating System",
+          "27Operating System",
           {
             "id":141,
             "name":"Revise OS notes ",
@@ -1046,7 +1046,7 @@
           
         ],
         "day28":[
-          "DBMS",
+          "28DBMS",
           {
             "id":142,
             "name":"Revise DBMS notes ",
@@ -1055,7 +1055,7 @@
           }
         ],
         "day29":[
-            "Computer Networks",
+            "29Computer Networks",
             {
               "id":143,
               "name":"Revise CN notes ",
@@ -1064,7 +1064,7 @@
             }
         ],
         "day30":[
-          "Projects",
+          "30Projects",
           {
               "id":144,
               "name":"Make a note of how will your represent your projects, and prepare all questions related to tech which you have used in your projects.",

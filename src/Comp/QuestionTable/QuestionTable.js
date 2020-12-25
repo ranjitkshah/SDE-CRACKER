@@ -112,12 +112,11 @@ export default function QuestionTable({ index, data }) {
   //     return item != index;
   //   });
   // }
- 
 
   return (
     <div className={classes.listDiv}>
       <ToastContainer />
-      <h1 className={classes.title}> {data[0].toUpperCase()} </h1>
+      <h1 className={classes.title}> {data[0].substring(2).toUpperCase()} </h1>
       <List className={classes.root}>
         {data.slice(1).map((data, index) => {
           const labelId = `checkbox-list-label-${index}`;
@@ -131,7 +130,10 @@ export default function QuestionTable({ index, data }) {
                 onClick={handleClick}
               >
                 <Avatar className={classes.index}>{data.id}</Avatar>
-                <ListItemText primary={data?.name} />
+                <ListItemText
+                  className={classes.itemTitle}
+                  primary={data?.name}
+                />
                 {open ? (
                   <ExpandLess className={classes.open} />
                 ) : (
@@ -163,6 +165,8 @@ export default function QuestionTable({ index, data }) {
                           target="_blank"
                           href={data?.questionurl}
                           aria-label="comments"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <img
                             className={classes.logo}
@@ -171,7 +175,13 @@ export default function QuestionTable({ index, data }) {
                         </IconButton>
                       </Tooltip>
                       <Tooltip enterTouchDelay={100} title="youtube help video">
-                        <IconButton edge="end" aria-label="youtube" href={data?.yturl} >
+                        <IconButton
+                          edge="end"
+                          aria-label="youtube"
+                          href={data?.yturl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <img
                             className={classes.logo}
                             src="https://img.icons8.com/fluent/48/000000/youtube-play.png"
@@ -220,5 +230,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "aqua",
     borderRadius: "0px 30px",
     margin: "10px 0px",
+  },
+  itemTitle: {
+    minWidth: 220,
   },
 }));

@@ -32,17 +32,12 @@ export default function Daygrid() {
     const snapshot = await firebase
       .firestore()
       .collection("Questions")
-      .doc("7e7251b0-463e-11eb-aeb1-23d6876ca652")
+      .doc("57b0fbc0-46df-11eb-9967-ef1150090e32")
       .get();
     let data = snapshot.data()["question"];
-    console.log(data)
     var result = Object.keys(data).map((key) => [data[key]]);
-    console.log(result.sort())
-  
     setQuestion(result);
   }
-  console.log(question)
-
 
 
   //questionlist
@@ -50,7 +45,6 @@ export default function Daygrid() {
     setshowQuestion(true);
     setlist(data);
     setdayIndex(index);
-
   };
 
   const classes = useStyles();
@@ -85,13 +79,21 @@ export default function Daygrid() {
                           <Typography variant="h6" component="h1">
                             Day {index + 1}
                           </Typography>
-                          <Typography className={classes.truncate} >{data[0][0]}</Typography>
+                          <Typography className={classes.truncate}>
+                            {data[0][0].substring(2)}
+                          </Typography>
                         </Paper>
                       </TimelineContent>
                     </TimelineItem>
                   );
                 })}
               </Timeline>
+              <div className={classes.congo}>
+                <span>
+                  🎉🎉Hurrah!! You are ready for your placement after a month of
+                  hard-work without a cheat day 🚀🚀.
+                </span>
+              </div>
             </>
           ) : (
             <div className={classes.QuestionTable}>
@@ -106,7 +108,6 @@ export default function Daygrid() {
               <QuestionTable index={dayIndex} data={list} />
             </div>
           )}
-          <div></div>
         </div>
       ) : (
         <div className={classes.loader}>
@@ -123,7 +124,6 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "0px 30px 0px 30px",
     backgroundColor: "#f50057",
     color: "white",
-    border: "5px solid",
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
@@ -151,7 +151,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     flexDirection: "column",
     fontSize: "32px",
-    ["@media (max-width:390px)"]: {
+    ["@media (max-width:420px)"]: {
       fontSize: "22px",
     },
   },
@@ -165,9 +165,18 @@ const useStyles = makeStyles((theme) => ({
     color: "#f50057",
     fontWeight: "bold",
   },
-  // truncate: {
-  //   whiteSpace: 'nowrap',
-  //   overflow: 'hidden',
-  //   textOverflow: 'ellipsis',
-  // }
+  truncate: {
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    ["@media (max-width:420px)"]: {
+      maxWidth: "65px",
+    },   
+  },
+  congo: {
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 14
+
+  },
 }));
