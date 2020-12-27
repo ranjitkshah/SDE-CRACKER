@@ -2,6 +2,7 @@ import React, { useEffect, useContext, useState } from "react";
 import { UserContext } from "../../providers/UserProvider";
 import { Link, Redirect } from "react-router-dom";
 import firebase, { logOut } from "../../services/firebase";
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import {
   AppBar,
   IconButton,
@@ -44,6 +45,7 @@ export default function Navbar() {
             aria-haspopup="true"
           >
             <Avatar src={user?.photoURL} />
+            <ArrowDropDownIcon />
           </IconButton>
           <Menu
             id="simple-menu"
