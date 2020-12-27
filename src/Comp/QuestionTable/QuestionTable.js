@@ -159,7 +159,7 @@ export default function QuestionTable({ index, data }) {
                       primary={done.includes(data?.id) ? "Done" : "Not Done"}
                     />
                     <ListItemSecondaryAction>
-                      <Tooltip enterTouchDelay={100} title="question link">
+                      <Tooltip arrow enterTouchDelay={100} title="question link">
                         <IconButton
                           edge="end"
                           target="_blank"
@@ -174,7 +174,7 @@ export default function QuestionTable({ index, data }) {
                           />
                         </IconButton>
                       </Tooltip>
-                      <Tooltip enterTouchDelay={100} title="youtube help video">
+                      <Tooltip arrow enterTouchDelay={100} title="youtube help video">
                         <IconButton
                           edge="end"
                           aria-label="youtube"

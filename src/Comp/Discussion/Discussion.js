@@ -59,7 +59,7 @@ export default function Discussion() {
             value={formValue}
             className={classes.input}
             onChange={(e) => setFormValue(e.target.value)}
-            placeholder="say something nice"
+            placeholder="talk is cheap show me the code"
           />
           &nbsp;
           <button
@@ -67,7 +67,7 @@ export default function Discussion() {
             type="submit"
             disabled={!formValue}
           >
-            🕊️
+            send
           </button>
         </form>
       </div>
@@ -86,7 +86,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    backgroundColor: "aqua",
   },
   message: {
     padding: 10,
@@ -105,5 +104,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     width: 97,
+    backgroundColor: "#f50057",
+    color: "white",
   },
 }));

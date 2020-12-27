@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/" component={Login} />
           {user ? (
             <div>
-              <Route exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/questions" component={Dashboard} />
               <Route exact path="/profile" component={Profile} />
               <Route exact path="/connect" component={Connect} />
               <Route exact path="/about" component={About} />

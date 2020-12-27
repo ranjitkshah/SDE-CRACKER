@@ -57,8 +57,8 @@ export default function Navbar() {
             <Link to="/profile" style={{ textDecoration: "none" }}>
               <MenuItem>Profile</MenuItem>
             </Link>
-            <Link to="/dashboard" style={{ textDecoration: "none" }}>
-              <MenuItem>Dashboard</MenuItem>
+            <Link to="/questions" style={{ textDecoration: "none" }}>
+              <MenuItem>Questions</MenuItem>
             </Link>
             <Link to="/discussion" style={{ textDecoration: "none" }}>
               <MenuItem>Discussion Forum</MenuItem>

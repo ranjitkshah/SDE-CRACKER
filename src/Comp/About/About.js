@@ -12,7 +12,7 @@ export default function About() {
         <h3>SDE-CRACKER</h3>
       </div>
       <div className={classes.center}>
-        <span className={classes.subtitle}>About us</span>
+        <span className={classes.subtitle}>ABOUT US</span>
         <p>
           SDE-CRACKERS helps you to build confidence in advance DSA problems and
           interview preparation. Only start doing these problems if you feel you

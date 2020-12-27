@@ -11,7 +11,7 @@ const [redirect, setredirect] = useState(null)
 
 useEffect(() => {
     if (user) {
-      setredirect('/dashboard')
+      setredirect('/questions')
     }
   }, [user])
   if (redirect) {
