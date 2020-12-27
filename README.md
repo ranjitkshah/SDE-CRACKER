@@ -8,6 +8,7 @@
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) ![Maintenance](https://img.shields.io/maintenance/yes/2020)
 
 <div align="center"><a href="https://sdecracker.tech/"> <img align="center" alt="sde cracker" src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609101368/Screenshot_2020-12-28_015945_awcxxu.jpg" > </a> </div>
+
 SDE-CRACKERS helps you to build confidence in advance DSA problems and interview preparation. Only start doing these problems if you feel you are comfortable with solving basic problems of DSA. Once you are, you can start preparing for these problems, because these problems are solely interview based.
 
 ## Links:
@@ -16,7 +17,7 @@ SDE-CRACKERS helps you to build confidence in advance DSA problems and interview
 
 ## Tech Stack:
 
- <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>  <img src="https://img.shields.io/badge/markdown-%23000000.svg?&style=for-the-badge&logo=markdown&logoColor=white"/>  <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/> <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/> <img src="https://img.shields.io/badge/vercel%20-%23000000.svg?&style=for-the-badge&logo=vercel&logoColor=white"/> <img src ="https://img.shields.io/badge/firebase-%2307405e.svg?&style=for-the-badge&logo=firebase&logoColor=yellow"/> <img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/material%20ui%20-%230081CB.svg?&style=for-the-badge&logo=material-ui&logoColor=white"/> 
+ <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>  <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>  <img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/> <img src="https://img.shields.io/badge/vercel%20-%23000000.svg?&style=for-the-badge&logo=vercel&logoColor=white"/> <img src ="https://img.shields.io/badge/firebase-%2307405e.svg?&style=for-the-badge&logo=firebase&logoColor=yellow"/> <img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/material%20ui%20-%230081CB.svg?&style=for-the-badge&logo=material-ui&logoColor=white"/> 
 
 
 - **Frontend:** ReactJS
@@ -29,8 +30,7 @@ SDE-CRACKERS helps you to build confidence in advance DSA problems and interview
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609101938/Screenshot_2020-12-28_020851_n3qmof.jpg" />  <img src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609101937/Screenshot_2020-12-28_021311_m5afbm.jpg" />   <img src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609101938/Screenshot_2020-12-28_021333_qmwaty.jpg" />
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
