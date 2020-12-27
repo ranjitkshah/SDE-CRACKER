@@ -7,7 +7,7 @@
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) ![Maintenance](https://img.shields.io/maintenance/yes/2020)
 
-<div align="center"><a href="https://sdecracker.tech/"> <img align="center" alt="sde cracker" src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGNvZGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" > </a> </div>
+<div align="center"><a href="https://sdecracker.tech/"> <img align="center" alt="sde cracker" src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609101368/Screenshot_2020-12-28_015945_awcxxu.jpg" > </a> </div>
 SDE-CRACKERS helps you to build confidence in advance DSA problems and interview preparation. Only start doing these problems if you feel you are comfortable with solving basic problems of DSA. Once you are, you can start preparing for these problems, because these problems are solely interview based.
 
 ## Links:
