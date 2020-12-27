@@ -48,16 +48,17 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Get a API Key from firebase
+2. clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/ranjitkshah/SDE-CRACKER.git
    ```
-3. Install NPM packages
+3. cd SDE-CRACKER
+4. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API keys in `.env` file && use firestore for config.
+5. Enter your API keys in `.env` file && use firestore for config.
    ```JS
    REACT_APP_API_KEY=""
    REACT_APP_AUTH_DOMAIN=""
@@ -68,6 +69,11 @@ This is an example of how to list things you need to use the software and how to
    REACT_APP_APP_ID=""
    REACT_APP_MEASUREMENT_ID=""
    ```
+ 6. To run a project
+    ```JS
+    npm start
+    ```
+    run @ http://localhost:3000/
 
 
 <!-- CONTRIBUTING -->
