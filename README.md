@@ -32,15 +32,6 @@ SDE-CRACKERS helps you to build confidence in advance DSA problems and interview
 ## About The Project
 <img src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609101938/Screenshot_2020-12-28_020851_n3qmof.jpg" />  <img src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609101937/Screenshot_2020-12-28_021311_m5afbm.jpg" />   <img src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609101938/Screenshot_2020-12-28_021333_qmwaty.jpg" />
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -66,9 +57,16 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Enter your API keys in `.env` file && use firestore for config.
    ```JS
-   const API_KEY = 'ENTER YOUR API';
+   REACT_APP_API_KEY=""
+   REACT_APP_AUTH_DOMAIN=""
+   REACT_APP_DATABASE_URL=""
+   REACT_APP_PROJECT_ID=""
+   REACT_APP_STORAGE_BUCKET=""
+   REACT_APP_MESSAGING_SENDER_ID=""
+   REACT_APP_APP_ID=""
+   REACT_APP_MEASUREMENT_ID=""
    ```
 
 
