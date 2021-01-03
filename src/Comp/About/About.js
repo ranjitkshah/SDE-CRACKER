@@ -81,10 +81,10 @@ export default function About() {
             <div className={classes.biodata}>
               <Avatar src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609700093/IMG_20200425_064827_2_vc4c0c.jpg" />
               <span className={classes.subbiodata}>
-                Ranjit Shah
+                Devansh Chaubey
                 <br />
                 <a
-                  href="https://github.com/ranjitkshah"
+                  href="https://github.com/devansh5"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -94,7 +94,7 @@ export default function About() {
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/ranjit-shah-b94b7a1a8/"
+                  href="https://github.com/devansh5"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -106,37 +106,8 @@ export default function About() {
               </span>
             </div>
           </div>
-          {/* <a
-            href="https://www.linkedin.com/in/devansh5/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @devanshChaubey
-          </a>{" "}
-          <a
-            href="https://github.com/devansh5"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            👨‍💻
-          </a>{" "}
-          <a
-            href="https://www.linkedin.com/in/ranjit-shah-b94b7a1a8/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @ranjitkShah
-          </a>{" "}
-          <a
-            href="https://github.com/ranjitkshah"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            👨‍💻
-          </a> */}
-          <br />
-          <br />
           Project:{" "}
+          <br/>
           <a
             href="https://github.com/ranjitkshah/SDE-CRACKER"
             target="_blank"
