@@ -106,7 +106,8 @@ export default function About() {
               </span>
             </div>
           </div>
-          Project: <br />
+          Project:{" "}
+          <br/>
           <a
             href="https://github.com/ranjitkshah/SDE-CRACKER"
             target="_blank"
