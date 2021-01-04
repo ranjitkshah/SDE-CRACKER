@@ -23,22 +23,22 @@ export default function About() {
           <br />
           Sheet prepared by (Credits) :
           <div className={classes.biodata}>
-            <Avatar src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609700093/IMG_20200425_064827_2_vc4c0c.jpg" />
+            <Avatar src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609764726/1578164235412_zhranp.jpg" />
             <span className={classes.subbiodata}>
-              Ranjit Shah
+              Raj Vikramaditya
               <br />
               <a
-                href="https://github.com/ranjitkshah"
+                href="https://www.youtube.com/channel/UCJskGeByzRRSvmOyZOz61ig"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
                   className={classes.img}
-                  src="https://img.icons8.com/fluent/48/000000/github.png"
+                  src="https://img.icons8.com/fluent/48/000000/youtube-play.png"
                 />
               </a>
               <a
-                href="https://www.linkedin.com/in/ranjit-shah-b94b7a1a8/"
+                href="https://www.linkedin.com/in/rajarvp/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -49,8 +49,8 @@ export default function About() {
               </a>
             </span>
           </div>
-          Developed by :
-          <div className={classes.developer} >
+          Developed & maintained by :
+          <div className={classes.developer}>
             <div className={classes.biodata}>
               <Avatar src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609700093/IMG_20200425_064827_2_vc4c0c.jpg" />
               <span className={classes.subbiodata}>
@@ -79,12 +79,12 @@ export default function About() {
               </span>
             </div>
             <div className={classes.biodata}>
-              <Avatar src="https://res.cloudinary.com/ranjitkshah/image/upload/v1609700093/IMG_20200425_064827_2_vc4c0c.jpg" />
+              <Avatar src="https://avatars2.githubusercontent.com/u/43261186?s=400&u=27b9e79dc3b24d6213e05281ce7222ba61faa93c&v=4" />
               <span className={classes.subbiodata}>
-                Ranjit Shah
+                Devansh Chaubey
                 <br />
                 <a
-                  href="https://github.com/ranjitkshah"
+                  href="https://github.com/devansh5"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -94,7 +94,7 @@ export default function About() {
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/ranjit-shah-b94b7a1a8/"
+                  href="https://www.linkedin.com/in/devansh5/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -106,37 +106,7 @@ export default function About() {
               </span>
             </div>
           </div>
-          {/* <a
-            href="https://www.linkedin.com/in/devansh5/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @devanshChaubey
-          </a>{" "}
-          <a
-            href="https://github.com/devansh5"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            👨‍💻
-          </a>{" "}
-          <a
-            href="https://www.linkedin.com/in/ranjit-shah-b94b7a1a8/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @ranjitkShah
-          </a>{" "}
-          <a
-            href="https://github.com/ranjitkshah"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            👨‍💻
-          </a> */}
-          <br />
-          <br />
-          Project:{" "}
+          Project: <br />
           <a
             href="https://github.com/ranjitkshah/SDE-CRACKER"
             target="_blank"
@@ -201,6 +171,6 @@ const useStyles = makeStyles((theme) => ({
     width: 25,
   },
   developer: {
-    display: "flex"
-  }
+    display: "flex",
+  },
 }));
